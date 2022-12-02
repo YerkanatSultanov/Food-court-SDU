@@ -1,0 +1,31 @@
+body{
+    background-color: aquamarine;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uppernav{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 50px;
+    background-color: blueviolet;
+}
+
+.belownav{
+    width: 85%;
+    height: 50px;
+    background-color:blue;
+}
+
+.logo{
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+}
