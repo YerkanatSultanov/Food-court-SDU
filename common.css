@@ -1,0 +1,7 @@
+@font-face {
+	font-family: "Panton";
+	src: url("./Panton.woff") format("woff");/* Modern Browsers */
+		
+	font-weight: normal;
+	font-style: normal;
+}
