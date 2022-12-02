@@ -3,5 +3,40 @@
     height: 600px;
     background-color: cadetblue;
 }
-.samsaSKur{
+
+.foodsMenu{
+    display: flex;
+}
+
+.samsaPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    width: 200px;
+}
+
+.samsaSKurPhoto{
+    background-image: url("/img/bakery.webp");
+    background-size: cover;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.text{
+    margin-bottom: 30px;
+}
+
+.priceAndCart{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart{
+    width: 20px;
+    height: 10px;
+    background-color: red;
 }
