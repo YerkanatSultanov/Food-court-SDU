@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+.description{
+    background: url("https://live.staticflickr.com/7285/8726374156_85a48e2137_b.jpg");
+    background-size: cover;
+    height: 400px;
+    background-position: top
+;
+}
+
