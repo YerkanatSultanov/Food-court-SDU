@@ -1,20 +1,28 @@
 .description{
     width: 100%;
     height: 600px;
-    background-color: cadetblue;
-}
-
-.foodsMenu{
-    display: flex;
-}
-
-.samsaPart{
+    background-image: url("/img/972510.webp");
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    box-shadow: aliceblue 1px 2px 2px 2px;
+    text-align: center;
+    color: white;
+}
+
+.foodsMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    box-shadow: aliceblue 3px 3px 3px 3px;
     width: 200px;
 }
 
