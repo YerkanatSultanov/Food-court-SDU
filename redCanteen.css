@@ -1,0 +1,54 @@
+.description{
+    width: 100%;
+    height: 600px;
+    background-color: cadetblue;
+}
+
+.foodsMenu{
+    display: flex;
+}
+
+.samsaPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: aliceblue 1px 2px 2px 2px;
+    width: 200px;
+}
+
+.samsaSKurPhoto{
+    background-image: url("/img/bakery.webp");
+    background-size: cover;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.text{
+    margin-bottom: 30px;
+}
+
+.priceAndCart{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toCart{
+    width: 90px;
+    height: 35px;
+    color: coral;
+    background-color: white;
+    border-style: solid;
+    border-color: coral;
+    border-radius: 8px;
+}
+
+.toCart:hover {
+    color: white;
+    background-color: coral;
+}
+
