@@ -1,11 +1,53 @@
 body{
     margin: 0;
+    width: 100%;
 }
 .description{
-    background: url("https://live.staticflickr.com/7285/8726374156_85a48e2137_b.jpg");
+    background:linear-gradient(rgba(0, 0, 0, 0.647),rgba(0, 0, 0, 0.5)) , url("https://live.staticflickr.com/7285/8726374156_85a48e2137_b.jpg");
     background-size: cover;
     height: 400px;
-    background-position: top
-;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
 }
+.name{
+    text-align: center;
+    font-size: 57px;
+    margin-bottom: 0;
+}
+.about{
+    text-align: center;
+    font-size: 20px;
+    width: 45%;
+    word-wrap: break-word;
+}
+.mainMenu{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.category{
+    width: 100px;
+    margin: 20px;
+    border: 1px solid whitesmoke;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width:auto;
+    margin-bottom: 10px;
+
+}
+.title{
+    text-align: center;
+}
+
+
 
