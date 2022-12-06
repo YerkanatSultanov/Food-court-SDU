@@ -2,6 +2,36 @@ body{
     margin: 0;
     width: 100%;
 }
+
+.main{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.leftPart{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    padding-left: 30px;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.rightPart{
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+.heads{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+.choose{
+    padding-left: 40px;
+    padding-top: 20px;
+}
 .description{
     background:linear-gradient(rgba(0, 0, 0, 0.647),rgba(0, 0, 0, 0.5)) , url("https://live.staticflickr.com/7285/8726374156_85a48e2137_b.jpg");
     background-size: cover;
@@ -13,16 +43,10 @@ body{
     flex-direction: column;
     color: white;
 }
-.name{
-    text-align: center;
-    font-size: 57px;
-    margin-bottom: 0;
-}
 .about{
-    text-align: center;
-    font-size: 20px;
-    width: 45%;
-    word-wrap: break-word;
+    margin-top: 10px;
+    font-size: 15px;
+
 }
 .mainMenu{
     margin: 30px;
@@ -32,13 +56,22 @@ body{
 
 }
 .category{
-    width: 100px;
+    width: 150px;
     margin: 20px;
     border: 1px solid whitesmoke;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 2rem;
+    padding: 20px;
+    border-radius: 5%;
+    transition: 0.7s;
+
+
 }
-img{
+.category:hover{
+    background-color: #ff7200;
+    margin-bottom: 32px;
+    box-shadow: rgba(200, 20, 20, 0.4) 0px 7px 29px 0px;
+}
+.imgg{
     max-width: 100%;
     height: auto;
     width:auto;
