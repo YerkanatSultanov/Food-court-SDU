@@ -62,13 +62,15 @@ body{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px;
     border-radius: 5%;
-    transition: 0.7s;
+    transition: 1s;
+    position: relative;
 
 
 }
 .category:hover{
     background-color: #ff7200;
-    margin-bottom: 32px;
+    /*position: relative;*/
+    bottom: 15px;
     box-shadow: rgba(200, 20, 20, 0.4) 0px 7px 29px 0px;
 }
 .imgg{
@@ -76,8 +78,29 @@ body{
     height: auto;
     width:auto;
     margin-bottom: 10px;
+    border-radius: 50%;
+    border:3px double lightcyan;
+    }
+.imgg:hover, .img:hover, .imggD:hover {
+    animation:move;
+    animation-duration: 3s;
+}
+@keyframes move{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 
 }
+.img{
+     max-width: 100%;
+     height: auto;
+     width:auto;
+     margin-bottom: 10px;
+
+ }
 .imggD{
     max-width: 100%;
     max-height: 150px;
