@@ -73,6 +73,10 @@ body{
     bottom: 15px;
     box-shadow: rgba(200, 20, 20, 0.4) 0px 7px 29px 0px;
 }
+.mainphoto:hover{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+
+}
 .imgg{
     max-width: 100%;
     height: auto;
@@ -84,6 +88,7 @@ body{
 .imgg:hover, .img:hover, .imggD:hover {
     animation:move;
     animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 @keyframes move{
     0%{
@@ -94,6 +99,16 @@ body{
     }
 
 }
+@keyframes myAnim {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .img{
      max-width: 100%;
      height: auto;
