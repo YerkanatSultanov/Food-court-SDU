@@ -6,11 +6,14 @@
 	font-style: normal;
 }
 body{
+    min-height: 100vh;
     font-family: 'Panton',Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
-	/* width: 100%;
-	height: 100vh; */
+    padding-top: 100px;
+    
 }
 
 
@@ -18,9 +21,16 @@ body{
 /* NAVBAR STYLES STARTS */
 
 nav{
+    z-index: 5;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid lightgray;
 }
 
 .uppernav{
@@ -75,4 +85,80 @@ nav{
 }
 
 
+footer{
+    /* margin-top: 100px; */
+    border-top: lightgray 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    height: 290px;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* background: rgb(36,85,142); */
+    
+}
+.footerFirstFloor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 117px;
+    /* background: green; */
+    border-bottom: 1px solid lightgray;
+}
+.footerSecondFloor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 60px;
+    /* background-color: aquamarine; */
+    border-bottom: 1px solid lightgray;
+
+}
+.footerThirdFloor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+    /* background-color: aqua; */
+    height: 112px;
+}
 /* NAVBAR STYLES END */
+.footerButton{
+    margin-right: 10px;
+    width: 170px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerPhoneNumberh3{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.footerDescriptionSpan{
+    color: gray;
+    font-size: 12px;
+
+}
+.navLinks{
+    color: gray;
+    font-size: 13px;
+}
+
+.footerBottomText{
+    margin: 0px 10px;
+    font-size: 13px;
+    color: gray;
+    line-height: 20px;
+   
+}
