@@ -26,12 +26,55 @@
     width: 200px;
 }
 
+.choosing{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border-style: solid;
+    border-color: lavender;
+    border-radius: 8px;
+    color: black;
+}
+
+.name:hover{
+    border-color: coral;
+}
+
 .samsaSKurPhoto{
-    background-image: url("/img/bakery (1).png");
     background-size: cover;
+
+}
+.photo{
     margin: 10px;
     width: 150px;
     height: 150px;
+}
+.samsaSKurPhoto:hover{
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes move{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+@keyframes myAnim {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .text{
