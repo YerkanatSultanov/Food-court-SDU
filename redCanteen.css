@@ -32,11 +32,13 @@
     justify-content: space-around;
 }
 .name{
+    transition: 0.3s;
     display: flex;
     justify-content: center;
     width: 100px;
     border-style: solid;
     border-color: lavender;
+    cursor: pointer;
     border-radius: 8px;
     color: black;
 }
