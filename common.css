@@ -94,6 +94,8 @@ nav{
 
 
 footer{
+    background-color: white;
+    z-index: 3;
     /* margin-top: 100px; */
     border-top: lightgray 1px solid;
     display: flex;
