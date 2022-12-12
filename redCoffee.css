@@ -6,18 +6,19 @@
 }
 .header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 40%;
-    margin-left: 100px;
     color: #000000;
 }
 
 .coffeePhoto{
     background-image: url('img/photo-1517487881594-2787fef5ebf7.jpg');
     background-position: center;
-    width: 70%;
+    width: 60%;
     height: 500px;
+    border-radius: 2%;
+    border-left: 1px solid;
+    /*border-bottom-style: solid;*/
 }
 /* .photo{
     width: 700px;
