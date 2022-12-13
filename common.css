@@ -62,6 +62,15 @@ nav{
 .nava:hover{
     border-bottom: 2px solid orange;
 }
+.nava:focus{
+    border-bottom: 2px solid orange;
+
+}
+/* .carousel-button:hover,
+.carousel-button:focus{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+} */
 
 .logo{
     margin-left: 15px;
@@ -89,8 +98,10 @@ nav{
     margin-left: 30px ;
     border-radius: 10px;
     border: 2px solid orange;
+    cursor: pointer;
 
 }
+
 
 
 footer{
