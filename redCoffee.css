@@ -4,15 +4,19 @@
     display: flex;
     justify-content: space-between;
 }
+.secMain{
+    width: 40%;
+}
 .header{
     display: flex;
     justify-content: center;
-    width: 40%;
+    height: 100px;
     color: #000000;
 }
 
+
 .coffeePhoto{
-    background-image: url('img/photo-1517487881594-2787fef5ebf7.jpg');
+    background-image: url('./img/coffeeBackground (1).jpg');
     background-position: center;
     width: 60%;
     height: 500px;
