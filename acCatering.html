@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Ac Catering</title>
     <link href="common.css" rel="stylesheet">
+<!--    <link href="acCatering.js" rel="script">-->
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link href="AcCateringStyle.css" rel="stylesheet">
 </head>
@@ -51,25 +52,25 @@
         <div class="mainMenu">
             <h2 class="choose">Есть на выбор:</h2>
             <div class="mMenu">
-                <div class="category">
+                <div class="category" onclick="filter('Выпечка')">
                     <div class="image">
                         <img  class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/bakery.webp">
                     </div>
                     <div class="title">Выпечка</div>
                 </div>
-                <div class="category">
+                <div class="category" onclick="filter('Супы')">
                     <div class="image">
                         <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/soup.webp">
                     </div>
                     <div class="title">Супы</div>
                 </div>
-                <div class="category">
+                <div class="category" onclick="filter('Горячие блюда')">
                     <div class="image">
                         <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
                     </div>
                     <div class="title">Горячие блюда</div>
                 </div>
-                <div class="category">
+                <div class="category" onclick="filter('Десерт')">
                     <div class="image">
                         <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/dessert.webp">
                     </div>
@@ -92,493 +93,177 @@
     </div>
 
 <div class="menu">
-    <h1 class="partName">Выпечка</h1>
+    <h1 class="partName" id="partName"></h1>
     <div class="vipechka">
-        <div class="Part">
+        <div class="Part" id="part1">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img1" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text1"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price1"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
-        </div> <div class="Part">
-        <div class="partInPart">
-            <div class="samsaSKurPhoto">
-                <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-            </div>
-            <div class="text">Самса с курицей</div>
-            <div class="priceAndCart">
-                <div class="price">250 Тг</div>
-                <div class="cart">
-                    <button class="toCart">В корзину</button>
-                </div>
-            </div>
         </div>
-
-    </div>
-        <div class="Part">
+        <div class="Part" id="part2">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img2" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text2"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price2"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part3">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img3" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text3"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price3"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part4">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img4" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text4"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price4"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part5">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img5" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text5"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price5"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part6">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img6" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text6"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price6"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part7">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img7" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text7"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price7"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-    <h1 class="partName">Выпечка</h1>
-    <div class="vipechka">
-        <div class="Part">
+        <div class="Part" id="part8">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img8" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text8"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price8"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
-        </div> <div class="Part">
-        <div class="partInPart">
-            <div class="samsaSKurPhoto">
-                <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-            </div>
-            <div class="text">Самса с курицей</div>
-            <div class="priceAndCart">
-                <div class="price">250 Тг</div>
-                <div class="cart">
-                    <button class="toCart">В корзину</button>
-                </div>
-            </div>
         </div>
-
-    </div>
-        <div class="Part">
+        <div class="Part" id="part9">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img9" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text9"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price9"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part10">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img10" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text10"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price10"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part11">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img11" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text11"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price11"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
         </div>
-        <div class="Part">
+        <div class="Part" id="part12">
             <div class="partInPart">
                 <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                    <img class="imgg" id="img12" src="">
                 </div>
-                <div class="text">Самса с курицей</div>
+                <div class="text" id="text12"></div>
                 <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
+                    <div class="price" id="price12"></div>
                     <div class="cart">
                         <button class="toCart">В корзину</button>
                     </div>
                 </div>
             </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <h1 class="partName">Выпечка</h1>
-    <div class="vipechka">
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div> <div class="Part">
-        <div class="partInPart">
-            <div class="samsaSKurPhoto">
-                <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-            </div>
-            <div class="text">Самса с курицей</div>
-            <div class="priceAndCart">
-                <div class="price">250 Тг</div>
-                <div class="cart">
-                    <button class="toCart">В корзину</button>
-                </div>
-            </div>
         </div>
 
-    </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <h1 class="partName">Выпечка</h1>
-    <div class="vipechka">
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div> <div class="Part">
-        <div class="partInPart">
-            <div class="samsaSKurPhoto">
-                <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-            </div>
-            <div class="text">Самса с курицей</div>
-            <div class="priceAndCart">
-                <div class="price">250 Тг</div>
-                <div class="cart">
-                    <button class="toCart">В корзину</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="Part">
-            <div class="partInPart">
-                <div class="samsaSKurPhoto">
-                    <img class="imgg" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                </div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 </div>
 <footer>
@@ -630,5 +315,224 @@
         </div>
     </div>
 </footer>
+<script>
+    let bakery = [
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/samsa-s-kuriczej/thumbnail/medium.webp",
+            name: "Самса с курицей",
+            price: 250
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/bliny-s-myasom-2sht/thumbnail/medium.webp",
+            name: "Блины с мясом 2шт",
+            price: 360
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/pocho-s-syrom/thumbnail/medium.webp",
+            name: "Почо с сыром",
+            price: 315
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/sosiski-v-teste/thumbnail/medium.webp",
+            name: "Сосиски в тесте",
+            price: 240
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/pirozhki-zharenye-s-kartoshkoj/thumbnail/medium.webp",
+            name: "Пирожки жареные с картошкой",
+            price: 140
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/samsa-s-kuriczej/thumbnail/medium.webp",
+            name: "Самса с мясом",
+            price: 270
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/bliny-s-myasom-2sht/thumbnail/medium.webp",
+            name: "Блины с мясом 2шт",
+            price: 700
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/pirozhki-pechenye-s-kartoshkoj/thumbnail/medium.webp",
+            name: "Пирожки печеные с картошкой",
+            price: 150
+        }
+    ]
+    let soup = [
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/sorpa-300gr/thumbnail/medium.webp",
+            name: "Сорпа 300гр",
+            price: 520
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/rassolnik/thumbnail/medium.webp",
+            name: "Рассольник",
+            price: 560
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/chechevichniy-sup-300gr/thumbnail/medium.webp",
+            name: "Чечевичный суп 300гр",
+            price: 450
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/borshh-300gr/thumbnail/medium.webp",
+            name: "Борщ 300гр",
+            price: 490
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/sup-lapsha-iz-kuriczy-300gr/thumbnail/medium.webp",
+            name: "Суп лапша из курицы 300гр",
+            price:450
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/solyanka-300gr/thumbnail/medium.webp",
+            name: "Солянка 300гр",
+            price: 625
+        }
+
+    ]
+    let hotMeal = [
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/gujru-czomyan/thumbnail/medium.webp",
+            name: "Гуйру цомян",
+            price: 1395
+        },
+           {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/lagman-450gr/thumbnail/medium.webp",
+            name: "Лагман 450гр",
+            price: 765
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/kuricza-zharennaya/thumbnail/medium.webp",
+            name: "Курица жареная",
+            price: 1050
+        },
+           {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/plov-300gr/thumbnail/medium.webp",
+            name: "Плов 300гр",
+            price: 920
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/pelmeni-250gr/thumbnail/medium.webp",
+            name: "Пельмени 250гр",
+            price: 1035
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/manty-s-myasom-s-kartofelem-dom-s-tykvoj/thumbnail/medium.webp",
+            name: "Манты с мясом с картофелем / дом. с тыквой",
+            price: 1450
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/kuricza-kopchenaya/thumbnail/medium.webp",
+            name: "Курица запеченная в духовке",
+            price: 935
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/myaso-po-tajski-bez-garnira-220gr/thumbnail/medium.webp",
+            name: "Мясо по тайски без гарнира 220гр",
+            price:1335
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/myaso-po-kazahski-2/thumbnail/medium.webp",
+            name: "Мясо по-казахски",
+            price:1155
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/shhivonha-bez-garnira-220gr/thumbnail/medium.webp",
+            name: "Щивонха без гарнира 220гр",
+            price: 1690
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/shashlyk-iz-kuriczy-na-shpazhkah/thumbnail/medium.webp",
+            name: "Шашлык из курицы на шпажках",
+            price: 880
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/kuyrdak-s-kartofelem/thumbnail/medium.webp",
+            name: "Куырдак с картофелем",
+            price: 1240
+        }
+    ]
+    let  dessert = [
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/pirog-yablochnyj/thumbnail/medium.webp",
+            name: "Пирог яблочный",
+            price: 295
+        },
+           {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/korolevskaya-vatrushka/thumbnail/medium.webp",
+            name: "Королевская ватрушка",
+            price: 310
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/muravejnik/thumbnail/medium.webp",
+            name: "Муравейник",
+            price: 350
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/kokosovyj-tart/thumbnail/medium.webp",
+            name: "Кокосовый тарт",
+            price:440
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/pirozhnoe-napoleon/thumbnail/medium.webp",
+            name: "Пирожное Наполеон",
+            price: 420
+        },
+        {
+            img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/rogaliki-s-zavarnym-kremom/thumbnail/medium.webp",
+            name: "Рогалики с заварным кремом",
+            price: 110
+        }
+
+
+    ]
+        //    {
+        //     img: "",
+        //     name: "",
+        //     price:
+        // }
+    let categories = [
+        {
+            type: 'Выпечка',
+            array: bakery
+        },
+        {
+            type: 'Супы',
+            array: soup
+        },
+        {
+            type: 'Горячие блюда',
+            array: hotMeal
+        },
+        {
+            type: 'Десерт',
+            array: dessert
+        }
+    ]
+    function filter(a){
+        let x = bakery;
+        for (let i = 0; i < categories.length; i++) {
+            if (a === categories[i].type){
+                x = categories[i].array;
+                document.getElementById('partName').innerHTML = categories[i].type;
+            }
+
+        }
+        for (let j = 1; j < 13; j++) {
+            document.getElementById('part' + j).style.display = 'none';
+        }
+
+        let i = 0;
+        for (let j = 1; j <= x.length; j++) {
+            i = j -1;
+            document.getElementById('part' + j).style.display = 'flex';
+            document.getElementById('img' + j).src = x[i].img;
+            document.getElementById('text' + j).innerHTML = x[i].name;
+            document.getElementById('price' + j).innerHTML = x[i].price + ' Тг';
+        }
+
+    }
+</script>
 </body>
 </html>

@@ -35,11 +35,17 @@ img{
     color:white;
     font-size: 38px;
     overflow:hidden;
-    max-width: 550px;
-    animation: type 3s steps(50, end) 1;
-    animation-iteration-count: infinite;
-    transition: 5s;
+    max-width: 580px;
+    animation: animated-text 3s steps(20) 0.5s 0.5 normal both;
+
 }
+@keyframes animated-text{
+    from{width: 0px;}
+    to{width: 1390px;}
+}
+
+/* cursor animations */
+
 
 @keyframes type{
     from {
