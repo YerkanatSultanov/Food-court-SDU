@@ -5,6 +5,8 @@
     <title>Red Canteen</title>
     <link rel = "stylesheet" href="common.css">
     <link rel="stylesheet" href="redCanteen.css">
+    <script src="redCanteen.js"></script>
+
 </head>
 <body>
     <nav>
@@ -39,163 +41,14 @@
         </div>
         <div class="foodsMenu">
             <div class="choosing">
-                <div class="name"><p>Выпечка</p></div>
-                <div class="name"><p>Десерты</p></div>
-                <div class="name"><p>Напитки</p></div>
+                <div class="name" onclick="clickk(this)">Выпечка</div>
+                <div class="name" onclick="clickk(this)">Десерты</div>
+                <div class="name" onclick="clickk(this)">Напитки</div>
+                <div class="name" onclick="clickk(this)">Все</div>
             </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/bakery%20(1).png" alt="samsa" class="photo"></div>
-                <div class="text">Самса с курицей</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/bakery%20(1).png" alt="samsa" class="photo"></div>
-                <div class="text">Самса с сыром</div>
-                <div class="priceAndCart">
-                    <div class="price">240 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/0e0ed69349edc2c963704f24e289c335.png" alt="samsa" class="photo"></div>
-                <div class="text">Поча с курицой</div>
-                <div class="priceAndCart">
-                    <div class="price">220 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/0e0ed69349edc2c963704f24e289c335.png" alt="samsa" class="photo"></div>
-                <div class="text">Поча с сыром</div>
-                <div class="priceAndCart">
-                    <div class="price">210 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/zo2k7wmxr4i6wh9mw1quogjyxu1e8o5x.png" alt="samsa" class="photo"></div>
-                <div class="text">Ачма с шоколадом</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/29a1bd32.png" alt="samsa" class="photo"></div>
-                <div class="text">Круассан со сгущенкой</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/croissant-with-chocolat.jpg" alt="samsa" class="photo"></div>
-                <div class="text">Круассан с шоколадом</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/8747f9f6af47f3a8ff7c5b63f9dff352-680x500-removebg-preview.png" alt="samsa" class="photo" style="width: 180px; height: 180px">  </div>
-                <div class="text">Пиде</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="/img/a8dbaaece41cb21bcc16be71c8d79b4a.png" alt="samsa" class="photo" style="width: 180px; height: 180px">  </div>
-                <div class="text">Пиде</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="img/bcf3624ab2d24cb21fac59891a3644a4.png" alt="samsa" class="photo" style="width: 180px; height: 180px">  </div>
-                <div class="text">Жареная сосиска в тесте</div>
-                <div class="priceAndCart">
-                    <div class="price">250 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="/img/png-transparent-chocolate-donut-with-sprinkles-illustration-doughnut-dessert-bakery-cake-donut-collection-food-cake-decorating-sweetness-removebg-preview.png" alt="samsa" class="photo" style="width: 180px;">  </div>
-                <div class="text">Пончик</div>
-                <div class="priceAndCart">
-                    <div class="price">150 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="/img/Cheesecake-PNG-Image-HD.png" alt="samsa" class="photo">  </div>
-                <div class="text">Чизкейк</div>
-                <div class="priceAndCart">
-                    <div class="price">450 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="/img/1644441051_screenshot_24-removebg-preview.png" alt="samsa" class="photo" style=" width: 180px">  </div>
-                <div class="text">Сникерс</div>
-                <div class="priceAndCart">
-                    <div class="price">450 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="https://redfish-sushi.ru/d/banana-roll-1.png" alt="samsa" class="photo">  </div>
-                <div class="text">Ролл банан</div>
-                <div class="priceAndCart">
-                    <div class="price">350 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="Part">
-                <div class="samsaSKurPhoto"><img src="/img/fresh-bun-stuffed-with-poppy-seeds-homemade-baking_653217-361.jpg" alt="samsa" class="photo" style="width: 180px">  </div>
-                <div class="text">Булочка с маком</div>
-                <div class="priceAndCart">
-                    <div class="price">210 Тг</div>
-                    <div class="cart">
-                        <button class="toCart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
+          <div class= "places" id ="places"></div>
         </div>
+
 
     </div>
     <footer>
