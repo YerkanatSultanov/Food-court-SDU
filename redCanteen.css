@@ -10,6 +10,7 @@
     color: white;
 }
 
+
 .foodsMenu{
     display: flex;
     flex-wrap: wrap;
@@ -49,13 +50,13 @@
 
 .samsaSKurPhoto{
     background-size: cover;
-
 }
 .photo{
     margin: 10px;
     width: 150px;
     height: 150px;
 }
+
 .samsaSKurPhoto:hover{
     animation: myAnim 1s ease 0s 1 normal forwards;
 }
