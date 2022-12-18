@@ -1,3 +1,75 @@
-.image{
-    width: 60%;
+body{
+    margin: 0;
+    padding: 0;
 }
+.main{
+    margin-top: 100px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.imgg{
+    width: 238px;
+    height: 238px;
+}
+.part{
+    margin: 20px;
+}
+.manufacture_product{
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+
+.product_name{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
+.price_box{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #c70909;
+    margin-bottom: 15px;
+}
+.partInPart{
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.part{
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid whitesmoke;
+}
+.busket{
+    display: none;
+    padding: 0 26px;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #C70909;
+    color: #ffffff;
+    border: none;
+    transition: opacity .3s;
+}
+.part:hover .busket{
+    display: block;
+}
+
+
+
+
+
+
+
+
