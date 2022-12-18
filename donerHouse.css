@@ -11,6 +11,7 @@ img{
     max-width: 100%;
     height: auto;
 }
+
 .imgg{
     border-radius: 19px;
     width: 238px;
@@ -26,36 +27,51 @@ img{
     margin-bottom: 7px;
 }
 .words{
-    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
     color:white;
-    font-size: 22px;
-    font-family: 'Arial';
+    font-size: 36px;
     overflow:hidden;
+    max-width: 550px;
     animation: type 3s steps(50, end) 1;
     animation-iteration-count: infinite;
-}
-.nana{
-    width: 300px;
-    height: auto;
+    transition: 5s;
 }
 
 @keyframes type{
     from {
         width: 0;
     }
+    to{
+        width: 100%;
+    }
 }
 
 .logoL{
+    background-image: url("./img/img_3.png");
+    background-size: cover;
     width: 100%;
+    height: 800px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    width: 200px;
-    height: 100px;
+    text-align: center;
+    /*justify-content: space-around;*/
+    align-items: center;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 100px;
+    position: relative;
 }
+
+/*.nana {*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    right: 50px;*/
+/*    width: 200px;*/
+/*    height: auto;*/
+/*}*/
 
 
 .product_name{
