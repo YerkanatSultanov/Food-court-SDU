@@ -26,23 +26,29 @@ img{
     margin-bottom: 7px;
 }
 .words{
-    width: 120px;
+    width: 100%;
     color:white;
     font-size: 22px;
     font-family: 'Arial';
-    white-space:nowrap;
     overflow:hidden;
     animation: type 3s steps(50, end) 1;
     animation-iteration-count: infinite;
 }
+.nana{
+    width: 300px;
+    height: auto;
+}
+
 @keyframes type{
-
-    from { width: 0; }
-
+    from {
+        width: 0;
+    }
 }
 
 .logoL{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
     width: 200px;
     height: 100px;
