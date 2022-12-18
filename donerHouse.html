@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Food-court-sdu</title>
         <link href="common.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <link href="donerHouse.css" rel="stylesheet">
     </head>
 <body>
@@ -36,119 +37,189 @@
 </nav>
 
 <div class="main">
-    <div class="mainPhoto">
+    <div class="log">
+        <img src="./img/img_1.png">
     </div>
     <div class="logoL">
         <div class="words">Самые вкусные донеры в мире</div>
 <!--        <img class = "nana" src="https://donerhouse.store/wp-content/uploads/2022/03/main-logo.png">-->
     </div>
+    <div class="select">
+        <div class="sel" onclick="filter('Донер')">Донер</div>
+        <div class="sel" onclick="filter('Пицца')">Пицца и Пиде</div>
+        <div class="sel" onclick="filter('Бургер')">Бургеры</div>
+        <div class="sel" onclick="filter('Комбо')">Комбо</div>
+    </div>
     <div class="partInPart">
-        <div class="part">
+        <div class="part" id="part1">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img1" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name1"></h4>
+                    <div class="price_box" id="price_box1"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
-        <div class="part">
+        <div class="part" id="part2">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img2" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name2"></h4>
+                    <div class="price_box" id="price_box2"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
-        <div class="part">
+        <div class="part" id="part3">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img3" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name3"></h4>
+                    <div class="price_box" id="price_box3"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
-        <div class="part">
+        <div class="part" id="part4">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img4" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name4"></h4>
+                    <div class="price_box" id="price_box4"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
-        <div class="part">
+        <div class="part" id="part5">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img5" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name5"></h4>
+                    <div class="price_box" id="price_box5"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
-        <div class="part">
+        <div class="part" id="part6">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img6" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name6"></h4>
+                    <div class="price_box" id="price_box6"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
-        <div class="part">
+        <div class="part" id="part7">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img7" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name7"></h4>
+                    <div class="price_box" id="price_box7"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
-        <div class="part">
+        <div class="part" id="part8">
             <div class="image">
-                <img class="imgg" src="https://miapizza.kz/assets/cache/images/menu/zakuski/doner/yarim_ekmek_doner-500x500-a86.jpg">
+                <img class="imgg" id="img8" src="">
             </div>
             <div class="product_content">
                 <div class="product_content_inner">
-                    <p class="manufacture_product">Донер</p>
-                    <h4 class="product_name">Донер в батоне ассорти</h4>
-                    <div class="price_box">1400 тенге</div>
+                    <h4 class="product_name" id="product_name8"></h4>
+                    <div class="price_box" id="price_box8"></div>
+                </div>
+                <button class="busket">В корзину</button>
+            </div>
+        </div>
+        <div class="part" id="part9">
+            <div class="image">
+                <img class="imgg" id="img9" src="">
+            </div>
+            <div class="product_content">
+                <div class="product_content_inner">
+                    <h4 class="product_name" id="product_name9"></h4>
+                    <div class="price_box" id="price_box9"></div>
+                </div>
+                <button class="busket">В корзину</button>
+            </div>
+        </div>
+        <div class="part" id="part10">
+            <div class="image">
+                <img class="imgg" id="img10" src="">
+            </div>
+            <div class="product_content">
+                <div class="product_content_inner">
+                    <h4 class="product_name" id="product_name10"></h4>
+                    <div class="price_box" id="price_box10"></div>
+                </div>
+                <button class="busket">В корзину</button>
+            </div>
+        </div>
+        <div class="part" id="part11">
+            <div class="image">
+                <img class="imgg" id="img11" src="">
+            </div>
+            <div class="product_content">
+                <div class="product_content_inner">
+                    <h4 class="product_name" id="product_name11"></h4>
+                    <div class="price_box" id="price_box11"></div>
+                </div>
+                <button class="busket">В корзину</button>
+            </div>
+        </div>
+        <div class="part" id="part12">
+            <div class="image">
+                <img class="imgg" id="img12" src="">
+            </div>
+            <div class="product_content">
+                <div class="product_content_inner">
+                    <h4 class="product_name" id="product_name12"></h4>
+                    <div class="price_box" id="price_box12"></div>
+                </div>
+                <button class="busket">В корзину</button>
+            </div>
+        </div>
+        <div class="part" id="part13">
+            <div class="image">
+                <img class="imgg" id="img13" src="">
+            </div>
+            <div class="product_content">
+                <div class="product_content_inner">
+                    <h4 class="product_name" id="product_name13"></h4>
+                    <div class="price_box" id="price_box13"></div>
+                </div>
+                <button class="busket">В корзину</button>
+            </div>
+        </div>
+        <div class="part" id="part14">
+            <div class="image">
+                <img class="imgg" id="img14" src="">
+            </div>
+            <div class="product_content">
+                <div class="product_content_inner">
+                    <h4 class="product_name" id="product_name14"></h4>
+                    <div class="price_box" id="price_box14"></div>
                 </div>
                 <button class="busket">В корзину</button>
             </div>
         </div>
     </div>
-
 </div>
 <footer>
     <div class="footerFirstFloor">
@@ -199,5 +270,235 @@
         </div>
     </div>
 </footer>
+
+<script>
+   let doner = [
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A9565-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%81%D1%82%D1%8B-1-2.jpg.webp",
+           name: "Донер куриный",
+           price: 1690
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A9570-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%81%D1%82%D1%8B-1-2.jpg",
+           name: "Донер ассорти",
+           price:1790
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/baton_doner-1-2.jpg",
+           name: "Донер в батоне",
+           price:1790
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A9565-%D0%B4%D0%BB%D1%8F-%D0%B8%D0%BD%D1%81%D1%82%D1%8B-1-2.jpg.webp",
+           name: "Донер говяжий",
+           price:1690
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/doner_tariyalka-1-2.jpg.webp",
+           name: "Донер в тарелке",
+           price:2290
+       }
+   ]
+   let burger = [
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/gamburger-1-2.jpg",
+           name: "Гамбургер",
+           price: 1190
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/gamburger_dvaynoy-1-2.jpg",
+           name: "Двойной гамбургер",
+           price: 1750
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/chizburger-1-2.jpg",
+           name: "Чизбургер",
+           price:1290
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/chikenburger-1-2.jpg",
+           name: "Чикенбургер",
+           price:1190
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/chizburger_dvaynoy-1-2.jpg",
+           name: "Двойной чизбургер",
+           price: 1790
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/chikenburger_dvaynoy-1-2.jpg",
+           name: "Двойной чикенбургер",
+           price: 1690
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/chicken_chizburger-1-2.jpg",
+           name: "Чикенчизбургер",
+           price: 1290
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/twister-1-2.jpg.webp",
+           name: "Твистер",
+           price: 1150
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/chicken_dvaynoy_chizburger-1-2.jpg",
+           name: "Двойной чикенчизбургер",
+           price: 1750
+       }
+   ]
+let pizza = [
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5788-1-2.jpg.webp",
+        name: "Маргарита",
+        price: 1990
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5786-1-2.jpg",
+        name: "Ассорти",
+        price: 2290
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5799-1-2.jpg.webp",
+        name: "Грибная",
+        price: 2590
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5795-1-2.jpg",
+        name: "Пепперони",
+        price: 2880
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5784-1-2.jpg",
+        name: "Четыре сезона",
+        price: 1990
+    },{
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5806-1-2.jpg.webp",
+        name: "Четыре сыра",
+        price: 2690
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5789-1-2.jpg",
+        name: "Болоньезе",
+        price: 2790
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5796-1-2.jpg",
+        name: "Цезарь",
+        price: 2790
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5791-1-2.jpg",
+        name: "Куриная",
+        price: 1990
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5798-1-2.jpg",
+        name: "Мексиканская",
+        price: 2390
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5794-1-2.jpg",
+        name: "Детская",
+        price: 2090
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5809-1-2.jpg.webp",
+        name: "Пиде курица",
+        price: 2350
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5808-1-2.jpg",
+        name: "Пиде с рубленным мясом",
+        price: 2350
+    },
+    {
+        img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5807-1-2.jpg.webp",
+        name: "Пиде с сыром",
+        price: 2050
+    }
+]
+   let combo = [
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/04/cikenburger_kombo.jpg.webp",
+           name: "Чикенбургер Комбо №1",
+           price:2290
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/04/%D1%87%D0%B8%D0%BA%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%D0%B5%D1%802.jpg.webp",
+           name: "Чикенбургер Комбо №2",
+           price: 2290
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/04/gamburger_kombo.jpg.webp",
+           name: "Гамбургер Комбо",
+           price:2290
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/04/doner_lavah_kombo.jpg.webp",
+           name: "Комбо донер в лаваше",
+           price:2390
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/04/liposhka_kombo.jpg.webp",
+           name: "Комбо донер в лепешке",
+           price:2490
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/04/chicken_chicago_kombo.jpg.webp",
+           name: "Чикен Чикаго Комбо",
+           price: 2390
+       },
+       {
+           img: "https://donerhouse.store/wp-content/uploads/2022/03/kombo_s-1-2.jpg",
+           name: "Баскет Комбо",
+           price: 3990
+       }
+   ]
+    //{
+    //     img: "https://donerhouse.store/wp-content/uploads/2022/03/AI8A5798-1-2.jpg",
+    //     name: "",
+    //     price:
+    // }
+    let categories = [
+        {
+            type: 'Донер',
+            array: doner
+        },
+        {
+            type: 'Бургер',
+            array: burger
+        },
+        {
+            type: 'Пицца',
+            array: pizza
+        },
+        {
+            type: 'Комбо',
+            array: combo
+        }
+
+    ]
+    function filter(a){
+        let x;
+        for (let i = 0; i < categories.length; i++) {
+            if (a === categories[i].type){
+                x = categories[i].array;
+            }
+        }
+        for (let j = 1; j <= 14; j++) {
+            document.getElementById('part' + j).style.display = 'none';
+        }
+
+        let i = 0;
+        for (let j = 1; j <= x.length; j++) {
+            i = j -1;
+            document.getElementById('part' + j).style.display = 'flex';
+            document.getElementById('img' + j).src = x[i].img;
+            document.getElementById('product_name' + j).innerHTML = x[i].name;
+            document.getElementById('price_box' + j).innerHTML = x[i].price + ' Тг';
+        }
+
+    }
+</script>
 </body>
 </html>

@@ -3,6 +3,9 @@ body{
     padding: 0;
     color: white;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .main{
     margin-top: 100px;
@@ -14,10 +17,17 @@ img{
 
 .imgg{
     border-radius: 19px;
-    width: 238px;
-    height: 238px;
+    width: 168px;
+    height: 140px;
 }
 .part{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #daa40b;
+    padding: 20px;
+    width: 170px;
+    display: none;
     margin: 20px;
 }
 .manufacture_product{
@@ -35,10 +45,13 @@ img{
     color:white;
     font-size: 38px;
     overflow:hidden;
-    max-width: 550px;
-    animation: type 3s steps(50, end) 1;
-    animation-iteration-count: infinite;
-    transition: 5s;
+    max-width: 580px;
+    animation: animated-text 3s steps(20) 0.5s 0.5 normal both;
+
+}
+@keyframes animated-text{
+    from{width: 0px;}
+    to{width: 1390px;}
 }
 
 @keyframes type{
@@ -64,40 +77,26 @@ img{
     margin-bottom: 100px;
     position: relative;
 }
-
-/*.nana {*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    right: 50px;*/
-/*    width: 200px;*/
-/*    height: auto;*/
-/*}*/
-
-
 .product_name{
     font-size: 14px;
     line-height: 14px;
     font-weight: 400;
     text-transform: capitalize;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
 }
 .price_box{
     margin-top: 5px;
     font-size: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    color: #c70909;
+    line-height: 17px;
+    font-weight: 480;
+    color: white;
 }
 .partInPart{
     margin: 25px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-}
-.part{
-    padding: 20px;
-    /*border-radius: 16px;*/
-    /*border: 1px solid darkred;*/
+    justify-content: center;
 }
 .busket{
 
@@ -117,6 +116,25 @@ img{
 
     transition: all 0.3s ease 0s;
 }
+.select{
+    color: #daa40b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sel{
+    margin: 20px;
+    transition-duration: 0.4s;
+    position: relative;
+    border-radius: 11px;
+    padding: 8px;
+    border: 1px solid black;
+
+}
+.sel:hover{
+    background-color: #007050;
+    border: 1px solid #007050;
+}
 .product_content_inner{
     margin-bottom: 15px;
     text-align: center;
@@ -133,7 +151,9 @@ img{
     width: 100%;
     height: 600px;
 }
-
+.log{
+    display: none;
+}
 
 .part:hover .product_content_inner{
     display: none;
@@ -141,11 +161,37 @@ img{
 }
 
 .part:hover .busket{
+    position: relative;
     margin-top: 20px;
     opacity: 5;
     transition: opacity 5.3s;
     display: block;
     /*transition: all 0.3s ease 0s;*/
+}
+@media screen and (max-width: 400px){
+    .select{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .words{
+        white-space: break-spaces;
+        word-wrap: break-word;
+        max-width: 100%;
+    }
+    .logoL{
+        display: none;
+    }
+    .log{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+
+    }
+
 }
 
 
