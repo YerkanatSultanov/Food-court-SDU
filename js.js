@@ -19,4 +19,10 @@ const handleImageChange = (offset)=>{
 const onNext = ()=>handleImageChange(1)
 const onPrev = ()=>handleImageChange(-1)
 
+function flip(){
+    document.getElementById(1).classList.toggle("reverse") 
+      
+    // document.getElementById(selected[0]).classList.toggle("reverse") 
+    // document.getElementById(selected[2]).classList.toggle("reverse") 
+}
 // end for welcomePage

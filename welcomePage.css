@@ -3,12 +3,131 @@ body,html{
     margin: 0;
     /* background-image: url(./img/backgroundmaybe.webp); */
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.647),rgba(0, 0, 0, 0.5)) ,  url(./img/backgroundmaybe.webp); */
-    background-size: 10%;
+    /* background-size: 10%; */
+    
     }
 *, *::after, *::before{
     box-sizing: border-box;
 }
+/* .block{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+   
+    cursor: pointer ;
+    position: relative;
+  
+} */
+.auth{
+    margin-top: 60px;
+    z-index: 6;
+    
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.647),rgba(0, 0, 0, 0.5)) ,  url(./img/authFon.jpg);
+    background-size: cover;
 
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.647),rgba(0, 0, 0, 0.7)); */
+
+
+}
+/* .thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: yellow;
+} */
+.registrationBlock{
+    position: absolute;
+   
+    padding: 45px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 500px;
+    height: 500px;
+    transform-style:preserve-3d;
+    transition: all 0.8s ease;
+
+}
+.form-signin {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    height: 275px;
+    font-size: 16px;
+    font-weight: 300;
+    /* padding-left: 37px; */
+    /* padding-right: 37px; */
+    padding-top: 25px;
+    transition: opacity .5s ease, transform .5s ease;
+  }
+  .form-styling {
+    width: 95%;
+    height: 35px;
+      padding-left: 15px;
+      border: 1px solid black;
+      border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.2);
+  }
+  .btn-animate{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid black;
+
+
+  }
+  .thefront{
+    /* background-image: url("./img/mystery.jpg");  */
+    /* background-size: cover;  */
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    backface-visibility: hidden;
+    /* background: #ffc728; */
+    /* color: #333; */
+
+}
+.theback{
+    /* background-image: url('./img/cat.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    backface-visibility: hidden;
+    /* background: #fafafa; */
+    /* color: #333; */
+    transform: rotateY(180deg);
+
+}
+.reverse {
+    transform: rotateY(180deg);
+}
+  
 /* body{
     min-height: 100vh;
     font-family: 'Panton',Arial,sans-serif;
@@ -159,7 +278,7 @@ nav{
 
 
 .carousel{
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     position: relative;
 }
