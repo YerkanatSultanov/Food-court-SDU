@@ -158,7 +158,23 @@ nav{
 }
 
 
+.carousel{
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+}
+.carousel ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
+}
+.slide{
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    transition: 300ms opacity ease-in-out;
+}
 /* next block ends */
 
 .slide[data-active]{
