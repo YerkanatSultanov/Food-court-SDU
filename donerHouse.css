@@ -60,10 +60,11 @@ img{
     background: #C70909;
     color: #ffffff;
     border: none;
-    transition: opacity .3s;
+    transition: all 0.3s ease 0s;
 }
 .part:hover .busket{
     display: block;
+    transition: all 0.3s ease 0s;
 }
 
 
