@@ -9,7 +9,7 @@ const arr = [
             '                    <div class="cart">\n' +
             '                        <button class="toCart"  onclick="insert(1)">В корзину</button>\n' +
             '                    </div>\n' +
-            '                     </div>\n'+
+            '                     </div>\n' +
             '                </div>\n' +
             '            </div>',
         type: 'Выпечка'
@@ -309,15 +309,16 @@ function clickk(element) {
 function insert(a) {
     let j = '#text' + a;
     let l = '#price' + a;
-    let name=$(j).text();
+    let name = $(j).text();
     let price = $(l).text();
     $.ajax({
         type: "POST",
         url: "insert.php",
         data: {
-            name:name,
-            price:price},
-        success:function(data){
+            name: name,
+            price: price
+        },
+        success: function (data) {
             alert(data);
         }
     });
