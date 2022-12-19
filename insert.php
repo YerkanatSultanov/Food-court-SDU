@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 //$img=$_POST['img_src'];
 $name=$_POST['name'];
 $price=$_POST['price'];
-$sql="INSERT INTO `busket` (`name`, `price`) VALUES ($name, $price)";
+$sql="INSERT INTO `busket` (`name`, `price`) VALUES ('$name', $price)";
 
 if ($conn->query($sql) === TRUE) {
     echo "data inserted";

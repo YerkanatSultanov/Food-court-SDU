@@ -154,7 +154,6 @@
     .choosing {
         display: flex;
         flex-direction: column;
-
     }
     .coffeePhoto{
         background-size: cover;
