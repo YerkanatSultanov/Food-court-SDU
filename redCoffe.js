@@ -79,7 +79,7 @@ const arr = [
         html: '            <div class="samsaSKurPhoto"><img src="./img/png-transparent-chocolate-donut-with-sprinkles-illustration-doughnut-dessert-bakery-cake-donut-collection-food-cake-decorating-sweetness-removebg-preview.png" alt="samsa" class="photo" style="width: 180px"></div>\n' +
             '            <div class="text" id="text7">Пончик</div>\n' +
             '            <div class="priceAndCart">\n' +
-            '                <div class="price" id="price1">150 Тг</div>\n' +
+            '                <div class="price" id="price1">150</div>\n' +
             '                <div class="cart">\n' +
             '                    <button class="toCart" onclick="insert(1)">В корзину</button>\n' +
             '                </div>\n' +
