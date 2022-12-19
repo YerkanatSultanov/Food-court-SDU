@@ -11,7 +11,7 @@
     <link rel="icon" href="./img/logoFood.png">
 </head>
 <body style="padding-top:50px; display: flex; flex-direction: column; align-items: center;">
-    <!-- <div class="auth">
+    <div class="auth">
         <div id="1" class="registrationBlock">
             <div class="thefront">
                 <div style="display: flex;">
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <nav>
         <div class="uppernav">
             <a href="./welcomePage.html">
@@ -82,7 +82,7 @@
                 <a class="upperNavNoneW" href="./aboutUs.html">
                     <p class="navp">about us</p>
                 </a>
-                <div class="registrationButton" style="margin-right: 10px;">registration</div>
+                <div class="registrationButton" style="margin-right: 10px;" onclick='showRefister()'>registration</div>
                 <img class = "upperNavNoneW" src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -97,7 +97,7 @@
             <div class="" id="noneBlock" style="display: none;">
                 <!-- <div class="registrationButton" style="margin-left: 45px; margin-top: 20px;">registration</div> -->
     
-                <a href="./cart.html">
+                <a href="./cart.html" id="cartPage">
                     <div style="display: flex; align-items: center; padding-bottom: 0px;">
                         <img src="./img/cart.png" style="margin-left: 30px; margin-right: 10px;" width="30px" height="30px">
                         <p>cart</p>
@@ -105,8 +105,8 @@
                 </a>
                 
                 <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 45px; margin-top: 0px;">
-                <a href="./aboutUs.html">
-                    <p class="navp" style="margin: 0px; margin-left:30px">About us</p>
+                <a href="./aboutUs.html" id = "aboutPage">
+                    <p class="navp"  style="margin: 0px; margin-left:30px">About us</p>
                 </a>
             </div>
             <a href="./redCanteen.html"  class="nava">Red canteen</a>

@@ -45,3 +45,13 @@ function myFunction() {
     }
 }
 // end for welcomePage
+function showRefister(){
+    document.getElementsByClassName('auth')[0].style.display="flex";
+    document.body.style.overflowY="hidden";
+    document.getElementById('cartPage').disabled = "false";
+    document.getElementById('aboutPage').disabled = 'false';
+}
+var a_nodes_list = document.getElementById("aboutPage");
+a_nodes_list.onclick = function() { return false; };
+a_nodes_list.onmouseover = function() { alert("UNCLICKABLE"); };
+

@@ -19,8 +19,8 @@ body,html{
   
 } */
 .auth{
-    margin-top: 60px;
-    z-index: 6;
+    margin-top: 50px;
+    z-index: 200;
     
     position: absolute;
     top:0;
@@ -37,7 +37,11 @@ body,html{
 
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.647),rgba(0, 0, 0, 0.7)); */
 
+    display: none;
 
+}
+.btn-signin{
+    cursor: pointer;
 }
 /* .thecard{
     position: absolute;
