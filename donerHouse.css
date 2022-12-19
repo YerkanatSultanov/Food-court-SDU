@@ -47,6 +47,7 @@ img{
     overflow:hidden;
     max-width: 580px;
     animation: animated-text 3s steps(20) 0.5s 0.5 normal both;
+    animation-iteration-count: infinite;
 
 }
 @keyframes animated-text{
@@ -168,6 +169,17 @@ img{
     display: block;
     /*transition: all 0.3s ease 0s;*/
 }
+@media screen and (max-width: 768px) {
+    .part{
+        padding: 10px;
+        margin: 8px;
+
+    }
+    .logoL{
+        max-width: 760px;
+    }
+
+}
 @media screen and (max-width: 400px){
     .select{
         display: flex;
@@ -192,6 +204,7 @@ img{
         width: 100px;
         height: 100px;
         margin-top: 30px;
+        margin-left: 110px;
 
     }
     .product_name{
