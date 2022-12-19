@@ -92,13 +92,14 @@ img{
     margin-bottom: 7px;
 }
 .words{
+    background-color: #151819;
+    color:  #daa40b;
     white-space: nowrap;
     display: flex;
     font-family: Caveat-Regular, sans-serif;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    color:white;
     font-size: 38px;
     overflow:hidden;
     max-width: 580px;
