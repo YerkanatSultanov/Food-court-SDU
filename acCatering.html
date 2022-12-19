@@ -4,97 +4,96 @@
     <meta charset="UTF-8">
     <title>Ac Catering</title>
     <link href="common.css" rel="stylesheet">
-<!--    <link href="acCatering.js" rel="script">-->
+    <!--    <link href="acCatering.js" rel="script">-->
     <meta name="viewport" content="width=device-width, initial-scale=1" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="AcCateringStyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="uppernav">
-            <a href="./welcomePage.html">
-                <img src="./img/logo3bg.png" class="logo">
-            </a>
-            <div class="firstnavright">
-                <a href="./cart.html">
-                    <img src="./img/cart.png" width="30px" height="30px">
-                </a>
-                <a href="./aboutUs.html">
-                    <p class="navp">about us</p>
-                </a>
-                <div class="registrationButton">registration</div>
-                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
-            </div>
-        </div>
-        <!-- <div style="width: 85%; height: 2px; background-color: gray;"></div> -->
-        <div class="belownav">
-            <a href="./redCanteen.html"  class="nava">Red canteen</a>
-            <a href="./belkaChat.html" class="nava">Belka chat</a>
-            <a href="./acCatering.html" class="nava">Ac Catering</a>
-            <a href="./donerHouse.html" class="nava">Doner House</a>
-            <a href="./redCoffee.html" class="nava">Red Coffee</a>
-        </div>
-    </nav>
-    <div class="main">
-       <div>
-<!--           <h1 class="name">Ac catering</h1>-->
-           <div class="rightPart">
-               <h1 class="name">Ac catering</h1>
-               <img class="mainphoto" src="https://qaganat24.kz/wp-content/themes/init/img/first-slide.webp">
-               <img class="logoPhoto" src="https://pbs.twimg.com/profile_images/547739542715781120/-sDtVMOr_400x400.jpeg">
-
-           </div>
-
-       </div>
-
-<!--        <div class="leftPart">-->
-<!--            <h1 class="name">Ac Catering</h1>-->
-<!--            <div class="about">Команда Ac Catering – это большая семья, которая заботится о каждом студенте и преподавателе! Каждый день мы готовим для Вас с душой и любовью!</div>-->
-
+<!--    <nav>-->
+<!--        <div class="uppernav">-->
+<!--            <a href="./welcomePage.html">-->
+<!--                <img src="./img/logo3bg.png" class="logo">-->
+<!--            </a>-->
+<!--            <div class="firstnavright">-->
+<!--                <a href="./cart.html">-->
+<!--                    <img src="./img/cart.png" width="30px" height="30px">-->
+<!--                </a>-->
+<!--                <a href="./aboutUs.html">-->
+<!--                    <p class="navp">about us</p>-->
+<!--                </a>-->
+<!--                <div class="registrationButton">registration</div>-->
+<!--                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">-->
+<!--            </div>-->
 <!--        </div>-->
-        <div class="mainMenu">
-            <h2 class="choose">Есть на выбор:</h2>
-            <div class="mMenu">
-                <div class="category" onclick="filter('Выпечка')">
-                    <div class="image">
-                        <img  class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/bakery.webp">
-                    </div>
-                    <div class="title">Выпечка</div>
-                </div>
-                <div class="category" onclick="filter('Супы')">
-                    <div class="image">
-                        <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/soup.webp">
-                    </div>
-                    <div class="title">Супы</div>
-                </div>
-                <div class="category" onclick="filter('Горячие блюда')">
-                    <div class="image">
-                        <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
-                    </div>
-                    <div class="title">Горячие блюда</div>
-                </div>
-                <div class="category" onclick="filter('Десерты')">
-                    <div class="image">
-                        <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/dessert.webp">
-                    </div>
-                    <div class="title">Десерт</div>
-                </div>
-                <div class="category" onclick="filter('Салаты')">
-                    <div class="image">
-                        <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/salads.webp">
-                    </div>
-                    <div class="title">Салаты</div>
-                </div>
-                <div class="category" onclick="filter('Напитки')">
-                    <div class="image">
-                        <img class="imggD" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/beverages.webp">
-                    </div>
-                    <div class="title">Напитки</div>
-                </div>
-            </div>
-            </div>
+<!--        &lt;!&ndash; <div style="width: 85%; height: 2px; background-color: gray;"></div> &ndash;&gt;-->
+<!--        <div class="belownav">-->
+<!--            <a href="./redCanteen.html"  class="nava">Red canteen</a>-->
+<!--            <a href="./belkaChat.html" class="nava">Belka chat</a>-->
+<!--            <a href="./acCatering.html" class="nava">Ac Catering</a>-->
+<!--            <a href="./donerHouse.html" class="nava">Doner House</a>-->
+<!--            <a href="./redCoffee.html" class="nava">Red Coffee</a>-->
+<!--        </div>-->
+<!--    </nav>-->
+<div class="main">
+    <div>
+        <!--           <h1 class="name">Ac catering</h1>-->
+        <div class="rightPart">
+            <h1 class="name">Ac catering</h1>
+            <img class="mainphoto" src="https://qaganat24.kz/wp-content/themes/init/img/first-slide.webp">
+            <img class="logoPhoto" src="https://pbs.twimg.com/profile_images/547739542715781120/-sDtVMOr_400x400.jpeg">
+
+        </div>
+
     </div>
+
+    <!--        <div class="leftPart">-->
+    <!--            <h1 class="name">Ac Catering</h1>-->
+    <!--            <div class="about">Команда Ac Catering – это большая семья, которая заботится о каждом студенте и преподавателе! Каждый день мы готовим для Вас с душой и любовью!</div>-->
+
+    <!--        </div>-->
+    <div class="mainMenu">
+        <h2 class="choose">Есть на выбор:</h2>
+        <div class="mMenu">
+            <div class="category" onclick="filter('Выпечка')">
+                <div class="image">
+                    <img  class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/bakery.webp">
+                </div>
+                <div class="title">Выпечка</div>
+            </div>
+            <div class="category" onclick="filter('Супы')">
+                <div class="image">
+                    <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/soup.webp">
+                </div>
+                <div class="title">Супы</div>
+            </div>
+            <div class="category" onclick="filter('Горячие блюда')">
+                <div class="image">
+                    <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/hot-dishes.webp">
+                </div>
+                <div class="title">Горячие блюда</div>
+            </div>
+            <div class="category" onclick="filter('Десерты')">
+                <div class="image">
+                    <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/dessert.webp">
+                </div>
+                <div class="title">Десерт</div>
+            </div>
+            <div class="category" onclick="filter('Салаты')">
+                <div class="image">
+                    <img class="img" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/salads.webp">
+                </div>
+                <div class="title">Салаты</div>
+            </div>
+            <div class="category" onclick="filter('Напитки')">
+                <div class="image">
+                    <img class="imggD" src="https://qaganat24.kz/wp-content/themes/init/catalog/images/taxonomies/beverages.webp">
+                </div>
+                <div class="title">Напитки</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="menu">
     <h1 class="partName" id="partName"></h1>
@@ -108,7 +107,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price1"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(1)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -122,7 +121,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price2"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart"  onclick="insert(2)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -136,7 +135,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price3"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(3)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -150,7 +149,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price4"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(4)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -164,7 +163,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price5"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(5)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -178,7 +177,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price6"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(6)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -192,7 +191,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price7"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(7)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -206,7 +205,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price8"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(8)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -220,7 +219,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price9"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(9)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -234,7 +233,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price10"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(10)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -248,7 +247,7 @@
                 <div class="priceAndCart">
                     <div class="price" id="price11"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(11)">В корзину</button>
                     </div>
                 </div>
             </div>
@@ -262,25 +261,25 @@
                 <div class="priceAndCart">
                     <div class="price" id="price12"></div>
                     <div class="cart">
-                        <button class="toCart">В корзину</button>
+                        <button class="toCart" onclick="insert(12)">В корзину</button>
                     </div>
                 </div>
             </div>
         </div>
-   <div class="end1">
-       <div class="text">
-           <h3>Каким должно быть горячее блюдо?</h3>
-           <div class="t">Несмотря на то, что в Алматы можно купить или заказать
-               доставку самого различного питания, опираясь на свой опыт, мы можем выделить
-               основные свойства горячих блюд, которыми должны обладать и первое, и второе.
-               Особенно это актуально для блюд из нашего ассортимента.
-               Важно заранее ознакомиться с этими свойствами, чтобы сразу определить качество
-               заведения и добросовестность работы его сотрудников в будущем. Решив купить или заказать доставку действительно хороших горячих блюд традиционной кухни, вне зависимости от разновидности они должны быть:</div>
-           <h3>Вкусными</h3>
-           <div class="t">Любые первые и вторые блюда традиционной кухни безусловно должны быть вкусными и не важно, решили ли вы самостоятельно посетить заведение или заказать доставку на дом. Казалось бы, это такое базовое свойство, которым в принципе должна обладать любая еда в каждом заведении Алматы. Однако в сочетании с другими свойствами из этого списка (особенно с низкой стоимостью), многие воспринимают горячие блюда второй подачи в бюджетных заведениях, как что-то обыденное и даже посредственное, так как до этого недорогая еда в столовых их не впечатлила. На самом же деле стоимость второго горячего блюда формируется из имиджа заведения и редкости некоторых продуктов, а не из их качества, наличия нужного оборудования на кухне или профессионализма. Поэтому, решив купить или заказать доставку горячих блюд (особенно вторых) знайте, что низкая их стоимость не является оправданием плохого вкуса. Вы можете убедиться в этом прямо сейчас, просто купив или заказав доставку любого второго горячего блюда в сети столовых Qaganat.</div>
-       </div>
-       <div class="ffoto"></div>
-   </div>
+        <div class="end1">
+            <div class="text">
+                <h3>Каким должно быть горячее блюдо?</h3>
+                <div class="t">Несмотря на то, что в Алматы можно купить или заказать
+                    доставку самого различного питания, опираясь на свой опыт, мы можем выделить
+                    основные свойства горячих блюд, которыми должны обладать и первое, и второе.
+                    Особенно это актуально для блюд из нашего ассортимента.
+                    Важно заранее ознакомиться с этими свойствами, чтобы сразу определить качество
+                    заведения и добросовестность работы его сотрудников в будущем. Решив купить или заказать доставку действительно хороших горячих блюд традиционной кухни, вне зависимости от разновидности они должны быть:</div>
+                <h3>Вкусными</h3>
+                <div class="t">Любые первые и вторые блюда традиционной кухни безусловно должны быть вкусными и не важно, решили ли вы самостоятельно посетить заведение или заказать доставку на дом. Казалось бы, это такое базовое свойство, которым в принципе должна обладать любая еда в каждом заведении Алматы. Однако в сочетании с другими свойствами из этого списка (особенно с низкой стоимостью), многие воспринимают горячие блюда второй подачи в бюджетных заведениях, как что-то обыденное и даже посредственное, так как до этого недорогая еда в столовых их не впечатлила. На самом же деле стоимость второго горячего блюда формируется из имиджа заведения и редкости некоторых продуктов, а не из их качества, наличия нужного оборудования на кухне или профессионализма. Поэтому, решив купить или заказать доставку горячих блюд (особенно вторых) знайте, что низкая их стоимость не является оправданием плохого вкуса. Вы можете убедиться в этом прямо сейчас, просто купив или заказав доставку любого второго горячего блюда в сети столовых Qaganat.</div>
+            </div>
+            <div class="ffoto"></div>
+        </div>
         <div class="end2">
             <div class="ffoto2"></div>
             <div class="text">
@@ -293,55 +292,55 @@
         </div>
     </div>
 </div>
-    <footer>
-        <div class="footerFirstFloor">
-            <img src="./img/logo3bg.png" class="logo" style="margin: 0;">
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <button class="footerButton">Заказать доставку</button>
-        </div>
-        <div class="footerSecondFloor">
-            <div class="navLinks" style="margin-left: 50px;">Главная</div>
-            <div class="navLinks">Доставка еды</div>
-            <div class="navLinks">О нас</div>
-            <div class="navLinks">Кейтеринг</div>
-            <div class="navLinks">Новости</div>
-            <div class="navLinks" style="margin-right: 50px;">Контакты</div>
-        </div>
-        <div class="footerThirdFloor">
-            <div>
-                <div class="footerBottomText">© 2022 - "Qaganat24"</div>
-                <div class="footerBottomText">Сеть столовых.</div>
-            </div>
-            <div>
-                <img src="./icons/icons8-instagram-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-facebook-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-twitter-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-youtube-24.png" style="margin-right: 20px;">
-            </div>
-            <div style="display: flex;">
-                <div>
-                    <div class="footerBottomText">Разработка сайтов</div>
-                    <div class="footerBottomText" style=" text-align: right;">Веб студия</div>
-                </div>
-                <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">
-            </div>
-        </div>
-    </footer>
+<!--    <footer>-->
+<!--        <div class="footerFirstFloor">-->
+<!--            <img src="./img/logo3bg.png" class="logo" style="margin: 0;">-->
+<!--            <div class="phoneNumberBlock">-->
+<!--                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>-->
+<!--                <span class="footerDescriptionSpan">Доставка в Алматы</span>-->
+<!--            </div>-->
+<!--            <div class="phoneNumberBlock">-->
+<!--                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>-->
+<!--                <span class="footerDescriptionSpan">Доставка в Алматы</span>-->
+<!--            </div>-->
+<!--            <div class="phoneNumberBlock">-->
+<!--                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>-->
+<!--                <span class="footerDescriptionSpan">Доставка в Алматы</span>-->
+<!--            </div>-->
+<!--            <div class="phoneNumberBlock">-->
+<!--                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>-->
+<!--                <span class="footerDescriptionSpan">Доставка в Алматы</span>-->
+<!--            </div>-->
+<!--            <button class="footerButton">Заказать доставку</button>-->
+<!--        </div>-->
+<!--        <div class="footerSecondFloor">-->
+<!--            <div class="navLinks" style="margin-left: 50px;">Главная</div>-->
+<!--            <div class="navLinks">Доставка еды</div>-->
+<!--            <div class="navLinks">О нас</div>-->
+<!--            <div class="navLinks">Кейтеринг</div>-->
+<!--            <div class="navLinks">Новости</div>-->
+<!--            <div class="navLinks" style="margin-right: 50px;">Контакты</div>-->
+<!--        </div>-->
+<!--        <div class="footerThirdFloor">-->
+<!--            <div>-->
+<!--                <div class="footerBottomText">© 2022 - "Qaganat24"</div>-->
+<!--                <div class="footerBottomText">Сеть столовых.</div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <img src="./icons/icons8-instagram-24.png" style="margin-right: 20px;">-->
+<!--                <img src="./icons/icons8-facebook-24.png" style="margin-right: 20px;">-->
+<!--                <img src="./icons/icons8-twitter-24.png" style="margin-right: 20px;">-->
+<!--                <img src="./icons/icons8-youtube-24.png" style="margin-right: 20px;">-->
+<!--            </div>-->
+<!--            <div style="display: flex;">-->
+<!--                <div>-->
+<!--                    <div class="footerBottomText">Разработка сайтов</div>-->
+<!--                    <div class="footerBottomText" style=" text-align: right;">Веб студия</div>-->
+<!--                </div>-->
+<!--                <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
 
 <script>
     let bakery = [
@@ -425,7 +424,7 @@
             name: "Гуйру цомян",
             price: 1395
         },
-           {
+        {
             img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/lagman-450gr/thumbnail/medium.webp",
             name: "Лагман 450гр",
             price: 765
@@ -435,7 +434,7 @@
             name: "Курица жареная",
             price: 1050
         },
-           {
+        {
             img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/plov-300gr/thumbnail/medium.webp",
             name: "Плов 300гр",
             price: 920
@@ -487,7 +486,7 @@
             name: "Пирог яблочный",
             price: 295
         },
-           {
+        {
             img: "https://qaganat24.kz/wp-content/themes/init/catalog/images/products/korolevskaya-vatrushka/thumbnail/medium.webp",
             name: "Королевская ватрушка",
             price: 310
@@ -576,11 +575,11 @@
             price: 'Бесплатно'
         }
     ]
-        //{
-        //     img: "",
-        //     name: "",
-        //     price:
-        // }
+    //{
+    //     img: "",
+    //     name: "",
+    //     price:
+    // }
     let categories = [
         {
             type: 'Выпечка',
@@ -606,8 +605,6 @@
             type: 'Напитки',
             array: drink
         }
-
-
     ]
     function filter(a){
         let x;
@@ -629,36 +626,33 @@
             document.getElementById('img' + j).src = x[i].img;
             document.getElementById('text' + j).innerHTML = x[i].name;
             if (x[i].name === 'Чай')
-            document.getElementById('price' + j).innerHTML = x[i].price;
-            else document.getElementById('price' + j).innerHTML = x[i].price + ' Тг';
+                document.getElementById('price' + j).innerHTML = x[i].price;
+            else document.getElementById('price' + j).innerHTML = x[i].price;
         }
 
     }
+
 </script>
-    <script type="text/javascript">
+<script type="text/javascript">
 
-        function insert(a) {
-            // let k = '#img' + a;
-            let j = '#text' + a;
-            let l = '#price' + a;
+    function insert(a) {
+        let j = '#text' + a;
+        let l = '#price' + a;
+        let name=$(j).text();
+        let price = $(l).text();
+        $.ajax({
+            type: "POST",
+            url: "insert.php",
+            data: {
+                name:name,
+                price:price},
+            success:function(data){
+                alert(data);
+            }
+        });
 
-            // let img_src=$(k).attributes('src');
-            let name=$(j).text();
-            let price = $(l).text();
-            $.ajax({
-                type: "POST",
-                url: "insert.php",
-                data: {
-                    // img:img_src,
-                    name:name,
-                    price:price},
-                success:function(data){
-                    alert(data);
-                }
-            });
+    }
 
-        }
-
-    </script>
+</script>
 </body>
 </html>
