@@ -15,7 +15,9 @@
 .price{
     font-size: 17px;
 }
-
+.main{
+    width: 100%;
+}
 .foodsMenu{
     display: flex;
     flex-wrap: wrap;
@@ -129,7 +131,6 @@
          .choosing{
              display: flex;
              flex-direction: column;
-
          }
     .name{
         width: 150px;
