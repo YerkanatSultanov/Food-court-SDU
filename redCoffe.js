@@ -14,7 +14,7 @@ const arr = [
         html: '            <div class="samsaSKurPhoto"><img src="./img/Espresso-PNG-Free-Download.png" alt="samsa" class="photo"></div>\n' +
             '            <div class="text" id="text2">Экспрессо</div>\n' +
             '            <div class="priceAndCart">\n' +
-            '                <div class="price" id="price2">650</div>\n' +
+            '                <div class="price" id="price2">650<span>tg</span></div>\n' +
             '                <div class="cart">\n' +
             '                    <button class="toCart" onclick="insert(2)">В корзину</button>\n' +
             '                </div>\n' +
