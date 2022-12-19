@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 .main{
     margin-top: 100px;
@@ -39,6 +41,7 @@ img{
 .words{
     white-space: nowrap;
     display: flex;
+    font-family: Caveat-Regular, sans-serif;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
@@ -47,6 +50,7 @@ img{
     overflow:hidden;
     max-width: 580px;
     animation: animated-text 3s steps(20) 0.5s 0.5 normal both;
+    animation-iteration-count: infinite;
 
 }
 @keyframes animated-text{
@@ -168,13 +172,27 @@ img{
     display: block;
     /*transition: all 0.3s ease 0s;*/
 }
+@media screen and (max-width: 768px) {
+    .part{
+        padding: 10px;
+        margin: 8px;
+
+    }
+    .logoL{
+        max-width: 760px;
+    }
+
+}
 @media screen and (max-width: 400px){
     .select{
         display: flex;
         flex-direction: column;
         margin-bottom: 3px;
+        max-width: 40%;
+        text-align: center;
         margin-right: auto;
         margin-left: auto;
+        font-size: 18px;
     }
     .words{
         white-space: break-spaces;
@@ -189,7 +207,21 @@ img{
         width: 100px;
         height: 100px;
         margin-top: 30px;
+        margin-left: 110px;
 
+    }
+    .product_name{
+        font-size: 22px;
+    }
+    .price_box{
+        font-size: 23px;
+    }
+    .imgg{
+        width: 250px;
+        height: 160px;
+    }
+    .part{
+        width:230px
     }
 
 }
