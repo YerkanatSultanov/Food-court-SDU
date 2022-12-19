@@ -3,14 +3,67 @@ body{
     margin: 0;
     padding: 0;
     /*color: white;*/
-    background-color: black;
+    background-color: #151819;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
 }
+.mainContent{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    padding: 25px;
+    border-radius: 9px;
+    margin: 0 32px 0 0;
+}
+.content:hover{
+    border: 1px solid #333637;
+    box-shadow: #333637 0px 7px 29px 0px;
+}
+h3{
+
+      font-size: 14px;
+      margin: 0 0 2px;
+    margin-top: 15px;
+      text-transform: uppercase;
+  }
+.descr{
+
+    font-size: 12px;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 400;
+    color: #aaa;
+}
+.about{
+    line-height: 25px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.end{
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.title{
+    font-size: 30px;
+    font-weight: 900;
+    color: #daa40b;
+}
 .main{
     margin-top: 100px;
+    background-color: #151819;
 }
 img{
     max-width: 100%;
@@ -170,7 +223,6 @@ img{
     opacity: 5;
     transition: opacity 5.3s;
     display: block;
-    /*transition: all 0.3s ease 0s;*/
 }
 @media screen and (max-width: 768px) {
     .part{
@@ -181,8 +233,12 @@ img{
     .logoL{
         max-width: 760px;
     }
+    .about{
+        width: 85%;
+    }
 
 }
+
 @media screen and (max-width: 400px){
     .select{
         display: flex;
@@ -223,7 +279,16 @@ img{
     .part{
         width:230px
     }
-
+    .mainContent{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .content{
+        margin-right: auto;
+        margin-left: auto;
+        width: 150px;
+    }
 }
 
 
