@@ -247,7 +247,7 @@ body{
     color: white;
     background-color: coral;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 770px){
     .main{
         display: block;
         margin: 0px;
