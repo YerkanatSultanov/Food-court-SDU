@@ -7,15 +7,15 @@
     <title>Food-court-sdu</title>
     <link rel="stylesheet" href="./welcomePage.css">
     <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
-    <div class="auth">
+<body style="padding-top:50px; display: flex; flex-direction: column; align-items: center;">
+    <!-- <div class="auth">
         <div id="1" class="registrationBlock">
             <div class="thefront">
                 <div style="display: flex;">
                     <p style="margin-right: 15px;">Please, register</p>
-                    <!-- <p>SIGN UP</p> -->
                 </div>
                 <form class="form-signin" action="" method="post" name="form">
                     <div style="display: flex; width: 97.5%;">
@@ -49,20 +49,9 @@
             <div class="theback">
                 <div style="display: flex;">
                     <p style="margin-right: 15px;">Please, register</p>
-                    <!-- <p>SIGN UP</p> -->
                 </div>
                 <form class="form-signin" action="" method="post" name="form">
-                    <!-- <div style="display: flex; width: 97.5%;">
-                        <div>
-                            <label for="username">Name</label>
-                            <input class="form-styling" type="text" name="username" placeholder=""/>
-                        </div>
-                        <div>
-                            <label for="username">Surname</label>
-                            <input class="form-styling" type="text" name="username" placeholder=""/>
-                        </div>
-                        
-                    </div> -->
+                   
                     
                     <label for="username">Username</label>
                     <input class="form-styling" type="text" name="username" placeholder=""/>
@@ -80,32 +69,55 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <nav>
         <div class="uppernav">
             <a href="./welcomePage.html">
                 <img src="./img/logo3bg.png" class="logo">
             </a>
             <div class="firstnavright">
-                <a href="./cart.html">
+                <a href="./cart.html" class="upperNavNoneW">
                     <img src="./img/cart.png" width="30px" height="30px">
                 </a>
-                <a href="./aboutUs.html">
+                <a class="upperNavNoneW" href="./aboutUs.html">
                     <p class="navp">about us</p>
                 </a>
-                <div class="registrationButton">registration</div>
-                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
+                <div class="registrationButton" style="margin-right: 10px;">registration</div>
+                <img class = "upperNavNoneW" src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
         <!-- <div style="width: 85%; height: 2px; background-color: gray;"></div> -->
-        <div class="belownav">
+       
+    </nav>
+    <div class="topnav" id="myTopnav">
+        <div style="width: 85%;" class="openingNavbar">
+            <div class="" id="noneBlock" style="display: none;">
+                <!-- <div class="registrationButton" style="margin-left: 45px; margin-top: 20px;">registration</div> -->
+    
+                <a href="./cart.html">
+                    <div style="display: flex; align-items: center; padding-bottom: 0px;">
+                        <img src="./img/cart.png" style="margin-left: 30px; margin-right: 10px;" width="30px" height="30px">
+                        <p>cart</p>
+                    </div>
+                </a>
+                
+                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 45px; margin-top: 0px;">
+                <a href="./aboutUs.html">
+                    <p class="navp" style="margin: 0px; margin-left:30px">About us</p>
+                </a>
+            </div>
             <a href="./redCanteen.html"  class="nava">Red canteen</a>
             <a href="./belkaChat.html" class="nava">Belka chat</a>
             <a href="./acCatering.html" class="nava">Ac Catering</a>
             <a href="./donerHouse.html" class="nava">Doner House</a>
             <a href="./redCoffee.html" class="nava">Red Coffee</a>
+            
         </div>
-    </nav>
+        
+    </div>
     
 
     <div class="carousel">
@@ -180,7 +192,7 @@
 
 
 
-    <div class="stepsOfStudying" id="steps">
+    <div class="stepsOfStudying">
         <div class="boldtext">Производите оплату с Kaspi Pay</div>
         <div class="steps">
             <div class="step">
@@ -193,7 +205,7 @@
                 <div class="kaspipays" style="background-image: url(./kaspipay2.png);"></div>
                 <div class="stepBoldText">Оплачивайте <br> с QR телефона</div>
                 <h2 class="stepGrayText">Платеж производится на месте. Быстро, удобно и легко. Экономит время и силы</h2>
-            </div>
+            </div> 
 
             <div class="step">
                 <div class="kaspipays" style="background-image: url(./kaspipay3.png);"></div>
@@ -211,7 +223,7 @@
 
 
 
-    <div style="height: 1000px;"></div>
+    <!-- <div style="height: 1000px;"></div> -->
 
     
 
@@ -219,22 +231,19 @@
         <div class="footerFirstFloor">
             <img src="./img/logo3bg.png" class="logo" style="margin: 0;">
             <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
+                <h3 class="footerPhoneNumberh3">+7 (747) 649-21-97</h3>
+                <span class="footerDescriptionSpan">Mukan Zhanbolat</span>
             </div>
             <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
+                <h3 class="footerPhoneNumberh3">+7 (747) 108-91-55</h3>
+                <span class="footerDescriptionSpan">Sultanov Yerkanat</span>
             </div>
+           
             <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
+                <h3 class="footerPhoneNumberh3">+7 (777) 567-67-14</h3>
+                <span class="footerDescriptionSpan">Medresova Nuraina</span>
             </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <button class="footerButton">Заказать доставку</button>
+            <button class="footerButton">Поддержать создателей</button>
         </div>
         <div class="footerSecondFloor">
             <div class="navLinks" style="margin-left: 50px;">Главная</div>
@@ -246,7 +255,7 @@
         </div>
         <div class="footerThirdFloor">
             <div>
-                <div class="footerBottomText">© 2022 - "Qaganat24"</div>
+                <div class="footerBottomText">© 2022 - "Food Court Sdu"</div>
                 <div class="footerBottomText">Сеть столовых.</div>
             </div>
             <div>
@@ -257,13 +266,13 @@
             </div>
             <div style="display: flex;">
                 <div>
-                    <div class="footerBottomText">Разработка сайтов</div>
-                    <div class="footerBottomText" style=" text-align: right;">Веб студия</div>
+                    <div class="footerBottomText">По поводу багов</div>
+                    <div class="footerBottomText" style=" text-align: right;">сообщите</div>
                 </div>
                 <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">
             </div>
         </div>
-    </footer>
+    </footer> 
 
     <script src="./js.js" defer></script>
 </body>     

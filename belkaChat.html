@@ -7,34 +7,58 @@
         <title>Food-court-sdu</title>
         <link rel="stylesheet" href="./welcomePage.css">
         <link rel="stylesheet" href="./common.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     </head>
-<body>
+<body style="padding-top:50px; display: flex; flex-direction: column; align-items: center;">
     <nav>
         <div class="uppernav">
             <a href="./welcomePage.html">
                 <img src="./img/logo3bg.png" class="logo">
             </a>
             <div class="firstnavright">
-                <a href="./cart.html">
+                <a href="./cart.html" class="upperNavNoneW">
                     <img src="./img/cart.png" width="30px" height="30px">
                 </a>
-                <a href="./aboutUs.html">
+                <a class="upperNavNoneW" href="./aboutUs.html">
                     <p class="navp">about us</p>
                 </a>
-                <div class="registrationButton">registration</div>
-                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
+                <div class="registrationButton" style="margin-right: 10px;">registration</div>
+                <img class = "upperNavNoneW" src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
         <!-- <div style="width: 85%; height: 2px; background-color: gray;"></div> -->
-        <div class="belownav">
+       
+    </nav>
+    <div class="topnav" id="myTopnav">
+        <div style="width: 85%;" class="openingNavbar">
+            <div class="" id="noneBlock" style="display: none;">
+                <!-- <div class="registrationButton" style="margin-left: 45px; margin-top: 20px;">registration</div> -->
+    
+                <a href="./cart.html">
+                    <div style="display: flex; align-items: center; padding-bottom: 0px;">
+                        <img src="./img/cart.png" style="margin-left: 30px; margin-right: 10px;" width="30px" height="30px">
+                        <p>cart</p>
+                    </div>
+                </a>
+                
+                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 45px; margin-top: 0px;">
+                <a href="./aboutUs.html">
+                    <p class="navp" style="margin: 0px; margin-left:30px">About us</p>
+                </a>
+            </div>
             <a href="./redCanteen.html"  class="nava">Red canteen</a>
             <a href="./belkaChat.html" class="nava">Belka chat</a>
             <a href="./acCatering.html" class="nava">Ac Catering</a>
             <a href="./donerHouse.html" class="nava">Doner House</a>
             <a href="./redCoffee.html" class="nava">Red Coffee</a>
+            
         </div>
-    </nav>
+        
+    </div>
 
     BELKACHAT
 
@@ -88,5 +112,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js.js" defer></script>
+
 </body>
 </html>

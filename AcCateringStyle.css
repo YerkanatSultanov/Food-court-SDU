@@ -4,8 +4,8 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /*color: #ff7200;*/
+    /* justify-content: center; */
+    /* color: #ff7200; */
 }
 .menu{
     margin-bottom: 100px;

@@ -25,4 +25,23 @@ function flip(){
     // document.getElementById(selected[0]).classList.toggle("reverse") 
     // document.getElementById(selected[2]).classList.toggle("reverse") 
 }
+function myFunction() {
+    
+    console.log('zapusk');
+    var x = document.getElementById("myTopnav");
+    var appear = document.getElementById("noneBlock");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+
+    if(appear.style.display=="none"){
+        console.log('zapuskIFA')
+        appear.style.display="block";
+    }else if(appear.style.display == "block"){
+        console.log('zashel')
+        appear.style.display="none";
+    }
+}
 // end for welcomePage
