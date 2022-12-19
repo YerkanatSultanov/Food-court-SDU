@@ -143,7 +143,7 @@ const arr = [
         type: 'Десерты',
     },
     {
-        html: '               <div class="samsaSKurPhoto"><img src="./img/https://redfish-sushi.ru/d/banana-roll-1.png" alt="samsa" class="photo">  </div>\n' +
+        html: '               <div class="samsaSKurPhoto"><img src="https://redfish-sushi.ru/d/banana-roll-1.png" alt="samsa" class="photo">  </div>\n' +
             '                <div class="text">Ролл банан</div>\n' +
             '                <div class="priceAndCart">\n' +
             '                    <div class="price">350 Тг</div>\n' +
