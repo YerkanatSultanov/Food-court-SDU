@@ -272,6 +272,9 @@ body{
 
 }
 @media screen and (max-width: 400px){
+    .imgg{
+        max-height: 150px;
+    }
  .main{
      display: block;
  }
