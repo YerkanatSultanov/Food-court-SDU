@@ -209,7 +209,7 @@ const arr = [
         type: 'Напитки'
     },
     {
-        html: '                <div class="samsaSKurPhoto"><img src="./img/Black-Tea-Transparent-File.png" alt="samsa" class="photo" style="width: 180px">  </div>\n' +
+        html: '                <div class="samsaSKurPhoto"><img src="./img/Black-Tea-Transparent-File.png" alt="sss" class="photo" style="width: 180px">  </div>\n' +
             '                            <div class="text">Черный чай</div>\n' +
             '                          <div class="priceAndCart">\n' +
             '                               <div class="price">100 Тг</div>\n' +
