@@ -46,12 +46,24 @@ function myFunction() {
 }
 // end for welcomePage
 function showRefister(){
+    console.log('started')
     document.getElementsByClassName('auth')[0].style.display="flex";
     document.body.style.overflowY="hidden";
-    document.getElementById('cartPage').disabled = "false";
-    document.getElementById('aboutPage').disabled = 'false';
+    document.getElementById('cartPage').classList.add('disableClick');
+    document.getElementById('aboutPage').classList.add('disableClick');
+    // document.getElementById('welcomePage').classList.add('disableClick');
 }
-var a_nodes_list = document.getElementById("aboutPage");
-a_nodes_list.onclick = function() { return false; };
-a_nodes_list.onmouseover = function() { alert("UNCLICKABLE"); };
 
+// document.getElementById('cartPage').classList.add('disableClick');
+// document.getElementById('cartPage1').classList.add('disableClick');
+// document.getElementById('aboutPage').classList.add('disableClick');
+// document.getElementById('aboutPage1').classList.add('disableClick');
+// document.getElementById('redCanteen').classList.add('disableClick');
+// document.getElementById('acCatering').classList.add('disableClick');
+// document.getElementById('donerHouse').classList.add('disableClick');
+// document.getElementById('redCoffee').classList.add('disableClick');
+
+// <a href="./redCanteen.html" id="redCanteen" class="nava">Red canteen</a>
+// <a href="./acCatering.html" id="acCatering" class="nava">Ac Catering</a>
+// <a href="./donerHouse.html" id="donerHouse" class="nava">Doner House</a>
+// <a href="./redCoffee.html" id="redCoffee" class="nava">Red Coffee</a>

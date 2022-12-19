@@ -427,7 +427,9 @@ nav{
     font-size: 17px;
   }
  
-  
+  .disableClick{
+    pointer-events: none;
+  }
   .topnav a.active {
     background-color: #04AA6D;
     color: white;
