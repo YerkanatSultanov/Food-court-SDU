@@ -60,7 +60,7 @@ body{
 
 }
 .text{
-    max-width: 80%;
+    max-width: 60%;
 }
 .end1, .end2{
     display: flex;
