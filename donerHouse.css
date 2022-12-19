@@ -173,8 +173,11 @@ img{
         display: flex;
         flex-direction: column;
         margin-bottom: 3px;
+        max-width: 40%;
+        text-align: center;
         margin-right: auto;
         margin-left: auto;
+        font-size: 18px;
     }
     .words{
         white-space: break-spaces;
@@ -190,6 +193,19 @@ img{
         height: 100px;
         margin-top: 30px;
 
+    }
+    .product_name{
+        font-size: 22px;
+    }
+    .price_box{
+        font-size: 23px;
+    }
+    .imgg{
+        width: 250px;
+        height: 160px;
+    }
+    .part{
+        width:230px
     }
 
 }
