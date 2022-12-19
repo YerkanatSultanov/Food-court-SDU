@@ -1,0 +1,77 @@
+.wrap{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.justblock{
+    height: 237px;
+    width: 300px;
+}
+.mg{
+    margin: 10px;
+}
+.bigword{
+    line-height: 40px;
+    
+    color: #232323;
+    font-size: 50px;
+    font-family: 'GraphikLCTT',Arial,sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.block1{
+    background-image: url(./img/Group_1077241091.jpg);
+    background-size: cover;
+    height: 437px;
+    width: 300px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.block2{
+    background-image: url(./img/Group_1077241087.jpg);
+    background-size: cover;
+    height: 437px;
+    width: 300px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.block3{
+    background-image: url(./img/Group_1077241088.jpg);
+
+    background-size: cover;
+    height: 437px;
+    width: 300px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.block4{
+    background-image: url(./img/Group_1077241089\ \(1\).svg);
+    background-size: cover;
+    height: 437px;
+    width: 300px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.block5{
+    background-image: url(./img/Group_1077241090.svg);
+    background-size: cover;
+    height: 437px;
+    width: 300px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.person{
+    width: 255px;
+    height: 187px;
+}

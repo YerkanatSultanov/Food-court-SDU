@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 40%; */
+    width: 80%;
 }
 .header{
     display: flex;
@@ -34,6 +34,9 @@
 
 
 .coffeePhoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
     background-image: url('./img/coffeeBackground (1).jpg');
     background-size: 100%;
@@ -42,13 +45,17 @@
     width: 100%;
     height: 500px;
 }
-
+.gif{
+    margin-top: 20px;
+}
 .foodsMenu{
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .choosing{
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
