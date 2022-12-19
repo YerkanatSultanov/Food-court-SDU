@@ -6,6 +6,8 @@
     <link href="common.css" rel="stylesheet">
 <!--    <link href="acCatering.js" rel="script">-->
     <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link href="AcCateringStyle.css" rel="stylesheet">
 </head>
 <body>
@@ -633,5 +635,30 @@
 
     }
 </script>
+    <script type="text/javascript">
+
+        function insert(a) {
+            // let k = '#img' + a;
+            let j = '#text' + a;
+            let l = '#price' + a;
+
+            // let img_src=$(k).attributes('src');
+            let name=$(j).text();
+            let price = $(l).text();
+            $.ajax({
+                type: "POST",
+                url: "insert.php",
+                data: {
+                    // img:img_src,
+                    name:name,
+                    price:price},
+                success:function(data){
+                    alert(data);
+                }
+            });
+
+        }
+
+    </script>
 </body>
 </html>
