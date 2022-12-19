@@ -3,10 +3,12 @@ const arr = [
         html: '                <div class="samsaSKurPhoto"><img src="./img/bakery%20(1).png" alt="samsa" class="photo"></div>\n' +
             '                <div class="text" id="text1">Самса с курицей</div>\n' +
             '                <div class="priceAndCart">\n' +
-            '                    <div class="price" id="price1">250</div>\n' +
+            '               <div style="display: flex"\n' +
+            '                    <div class="price" id="price1">250</div> <div>tg</div>' +
             '                    <div class="cart">\n' +
             '                        <button class="toCart"  onclick="insert(1)">В корзину</button>\n' +
             '                    </div>\n' +
+            '                     </div>\n'+
             '                </div>\n' +
             '            </div>',
         type: 'Выпечка'
