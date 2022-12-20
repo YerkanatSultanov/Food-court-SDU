@@ -43,6 +43,7 @@ body,html{
 .btn-signin{
     cursor: pointer;
 }
+
 /* .thecard{
     position: absolute;
     width: 100%;
@@ -52,22 +53,21 @@ body,html{
     background-color: yellow;
 } */
 .registrationBlock{
-    position: absolute;
-   
+    
+    background-color: #04AA6D;
+    /* position: absolute; */
     padding: 45px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     border-radius: 10px;
     background-color: white;
     opacity: 0.9;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 500px;
     height: 500px;
-    transform-style:preserve-3d;
     transition: all 0.8s ease;
+    /* transform-style:preserve-3d;     */
 
 }
 .form-signin {
@@ -104,34 +104,18 @@ body,html{
 
 
   }
-  .thefront{
-    /* background-image: url("./img/mystery.jpg");  */
-    /* background-size: cover;  */
-    position: absolute;
-    /* width: 100%; */
-    /* height: 100%; */
-    backface-visibility: hidden;
-    /* background: #ffc728; */
-    /* color: #333; */
-
+.thefront{
+    /* position: absolute; */
+    /* backface-visibility: hidden; */
 }
 .theback{
-    /* background-image: url('./img/cat.jpg'); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    position: absolute;
-    /* width: 100%; */
-    /* height: 100%; */
-    backface-visibility: hidden;
-    /* background: #fafafa; */
-    /* color: #333; */
-    transform: rotateY(180deg);
+    display: none;
+    /* position: absolute; */
+    /* backface-visibility: hidden; */
+    /* transform: rotateY(180deg); */
 
 }
-.reverse {
-    transform: rotateY(180deg);
-}
-  
+
 /* body{
     min-height: 100vh;
     font-family: 'Panton',Arial,sans-serif;

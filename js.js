@@ -20,11 +20,14 @@ const onNext = ()=>handleImageChange(1)
 const onPrev = ()=>handleImageChange(-1)
 
 function flip(){
-    document.getElementById(1).classList.toggle("reverse") 
-      
-    // document.getElementById(selected[0]).classList.toggle("reverse") 
-    // document.getElementById(selected[2]).classList.toggle("reverse") 
+    document.getElementsByClassName('thefront')[0].style.display = "none";
+    document.getElementsByClassName('theback')[0].style.display = "unset";
 }
+function flipagain(){
+    document.getElementsByClassName('thefront')[0].style.display = "unset";
+    document.getElementsByClassName('theback')[0].style.display = "none"
+}
+
 function myFunction() {
     
     console.log('zapusk');
@@ -53,7 +56,16 @@ function showRefister(){
     document.getElementById('aboutPage').classList.add('disableClick');
     // document.getElementById('welcomePage').classList.add('disableClick');
 }
-
+function makeClickable(){
+    document.getElementById('cartPage').classList.remove('disableClick');
+    document.getElementById('aboutPage').classList.remove('disableClick');
+    document.getElementById('cartPage2').classList.remove('disableClick');
+    document.getElementById('aboutPage2').classList.remove('disableClick');
+    document.getElementById('redCanteen').classList.remove('disableClick');
+    document.getElementById('acCatering').classList.remove('disableClick');
+    document.getElementById('donerHouse').classList.remove('disableClick');
+    document.getElementById('redCoffee').classList.remove('disableClick');
+}
 // document.getElementById('cartPage').classList.add('disableClick');
 // document.getElementById('cartPage1').classList.add('disableClick');
 // document.getElementById('aboutPage').classList.add('disableClick');
