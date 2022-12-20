@@ -36,7 +36,15 @@
         <a href="./redCoffee.html" class="nava">Red Coffee</a>
     </div>
 </nav>
-CART
+<div>
+    <h2>Busket</h2>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+    <div id="6"></div>
+</div>
 
 <footer>
     <div class="footerFirstFloor">
@@ -89,13 +97,16 @@ CART
 </footer>
 <script type="text/javascript">
     let mass=[];
+    let a;
     $.ajax({
         url:'getData.php',
         type:'POST',
         dataType: 'json',
         data: mass,
         success: function(data){
-            alert(data);
+            a = data;
+            document.getElementById('1').innerHTML = a
+
         }
     });
 </script>
