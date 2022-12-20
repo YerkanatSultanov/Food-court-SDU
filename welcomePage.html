@@ -11,272 +11,279 @@
     <link rel="icon" href="./img/logoFood.png">
 </head>
 <body style="padding-top:50px; display: flex; flex-direction: column; align-items: center;">
-    <div class="auth">
-        <div id="1" class="registrationBlock">
-            <div class="thefront">
-                <div style="display: flex;">
-                    <p style="margin-right: 15px;">Please, register</p>
-                </div>
-                <form class="form-signin" action="" method="post" name="form">
-                    <div style="display: flex; width: 97.5%;">
-                        <div>
-                            <label for="username">Name</label>
-                            <input class="form-styling" type="text" name="username" placeholder=""/>
-                        </div>
-                        <div>
-                            <label for="username">Surname</label>
-                            <input class="form-styling" type="text" name="username" placeholder=""/>
-                        </div>
-                        
-                    </div>
-                    
-                    <label for="username">Username</label>
-                    <input class="form-styling" type="text" name="username" placeholder=""/>
-                    <label for="password">Password</label>
-                    <input class="form-styling" type="text" name="password" placeholder=""/>
-                </form>
-                <div style="width: 100%; display: flex; justify-content: center; flex-direction: column; cursor: pointer;" onclick="makeClickable()">
-                    <div class="btn-animate">
-                        <a class="btn-signin" >Sign in</a>
-                    </div>
-                    <div style="width: 90%; height: 1px; background-color: gray ; align-self: center; margin-top: 25px;"></div>
-                    <div style="display: flex; justify-content: center;">
-                        <div style="align-self: center; margin-top: 15px;">already registered? <a href="#" style="text-decoration:underline;" onclick = 'flip()'>log in</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="theback">
-                <div style="display: flex;">
-                    <p style="margin-right: 15px;">Please, Log in</p>
-                </div>
-                <form class="form-signin" action="" method="post" name="form">
-                   
-                    
-                    <label for="username">Username</label>
-                    <input class="form-styling" type="text" name="username" placeholder=""/>
-                    <label for="password">Password</label>
-                    <input class="form-styling" type="text" name="password" placeholder=""/>
-                </form>
-                <div style="width: 100%; display: flex; justify-content: center; flex-direction: column;">
-                    <div class="btn-animate">
-                        <a class="btn-signin">Log in</a>
-                    </div>
-                    <div style="width: 90%; height: 1px; background-color: gray ; align-self: center; margin-top: 25px;"></div>
-                    <div style="display: flex; justify-content: center;">
-                        <div style="align-self: center; margin-top: 15px;">Have not logged in? <a href="#" style="text-decoration:underline;" onclick='flipagain()'>register</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav>
-        <div class="uppernav">
-            <a href="./welcomePage.html" id="welcomePage">
-                <img src="./img/logoFood.png" class="logo">
-            </a>
-            <div class="firstnavright">
-                <a href="./cart.html" class="upperNavNoneW disableClick" id="cartPage">
-                    <img src="./img/cart.png" width="30px" height="30px">
-                </a>
-                <a class="upperNavNoneW disableClick" id = "aboutPage" href="./aboutUs.html">
-                    <p class="navp"  >about us</p>
-                </a>
-                <div class="registrationButton " style="margin-right: 10px;" onclick='showRefister()'>registration</div>
-                <img class = "upperNavNoneW" src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
-        <!-- <div style="width: 85%; height: 2px; background-color: gray;"></div> -->
-       
-    </nav>
-    <div class="topnav" id="myTopnav">
-        <div style="width: 85%;" class="openingNavbar">
-            <div class="" id="noneBlock" style="display: none;">
-                <!-- <div class="registrationButton" style="margin-left: 45px; margin-top: 20px;">registration</div> -->
-    
-    
-                <a href="./cart.html" class="disableClick" id="cartPage2">
-                    <div style="display: flex; align-items: center; padding-bottom: 0px;">
-                          <img src="./img/cart.png" style="margin-left: 30px; margin-right: 10px;" width="30px" height="30px">
-                        <p>cart</p>
-                    </div>
-                </a>
-    
-                
-                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 45px; margin-top: 0px;">
-    
-                <a href="./aboutUs.html" class="disableClick" id="aboutPage2" >
-                    <p class="navp"  style="margin: 0px; margin-left:30px">About us</p>
-                </a>
-                
-                
-            </div>
-            <a href="./redCanteen.html" class="nava disableClick" id="redCanteen">Red canteen</a>
-            <a href="./acCatering.html" class="nava disableClick" id="acCatering">Ac Catering</a>
-            <a href="./donerHouse.html" class="nava disableClick" id="donerHouse">Doner House</a>
-            <a href="./redCoffee.html" class="nava disableClick" id="redCoffee">Red Coffee</a>
-            
-        </div>
-        
-    </div>
-    
-
-    <div class="carousel">
-        <button class="carousel-button next" onclick="onNext()">&#187;</button>
-        <button class="carousel-button prev" onclick="onPrev()">&#171;</button>
-        <ul class="slides">
-            <li class="slide" data-active> 
-                <img src="./img/IMG_3077%20(2).png" alt="lake image">
-            </li>
-            <li class="slide">
-                <img id="11" style="object-position: top;" src="./img/IMG_3090%20(2).png" alt="mountains image.">
-            </li>
-            <li class="slide" >
-                <img src="./img/972510.png" alt="forest image">
-            </li>
-        </ul>
-    </div>
-
-
-    <div class="buycoursediv" style = "background-position-x: 900px; background-position-y: -200px; background-size: 900px;" id="cases">
-        <div style="display: flex; flex-direction: column; justify-content: center; ">
-            <!-- <div>
-                <div class="bigboldtext">
-                    &nbsp;We guarantee you
-                </div>
-            </div> -->
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
-
-                <div class="manblock" >
-                    <div style="display: flex; align-items: center;">
-                        <img src="./img/galochka.png" class = "galochka">
-                        <div>
-                            <div class="name">An unforgettable trip</div>
-                            <div class="graytext">professional filming</div>
-                        </div>
-                    </div>
-                    <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">On our tours, you will have unforgettable fun and get to know the sights of your native country. </div>
-                    <div class="name" style="font-size: 20px; ">sign up for a tour</div>
-                </div>
-
-                <div class="manblock" >
-                    <div style="display: flex; align-items: center;">
-                        <img src="./img/galochka.png" class = "galochka">
-                        <div>
-                            <div class="name">New sensations</div>
-                            <div class="graytext">lakes, rivers, mountains</div>
-                        </div>
-                    </div>
-                    <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">you will be amazed by new discoveries that you did not expect from Kazakhstan</div>
-                    <div class="name" style="font-size: 20px;">sign up for a tour</div>
-                </div>
-
-                <div class="manblock" >
-                    <div style="display: flex; align-items: center;">
-                        <img src="./img/galochka.png" class = "galochka">
-                        <div>
-                            <div class="name">Icredible landscapes</div>
-                            <div class="graytext">deserts, steppes, mountains</div>
-                        </div>
-                    </div>
-                    <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">You will see stunning landscapes ranging from deserts and steppes to mountains and lakes</div>
-                    <div class="name" style="font-size: 20px;">sign up for a tour</div>
-                </div>
-                
-            </div>
-            
-
-
-        </div>
-        
-    </div>
-
-
-
-    <div class="stepsOfStudying">
-        <div class="boldtext">Производите оплату с Kaspi Pay</div>
-        <div class="steps">
-            <div class="step">
-                <div class="kaspipays"></div>
-                <div class="stepBoldText">Оплачивайте <br> с терминала</div>
-                <h2 class=" ">Платеж производится на месте. Быстро, удобно и легко. Экономит время и силы</h2>
-            </div>
-
-            <div class="step">
-                <div class="kaspipays" style="background-image: url(./kaspipay2.png);"></div>
-                <div class="stepBoldText">Оплачивайте <br> с QR телефона</div>
-                <h2 class="stepGrayText">Платеж производится на месте. Быстро, удобно и легко. Экономит время и силы</h2>
-            </div> 
-
-            <div class="step">
-                <div class="kaspipays" style="background-image: url(./kaspipay3.png);"></div>
-                <div class="stepBoldText">Оплачивайте <br> c помощью QR доски</div>
-                <h2 class="stepGrayText">Платеж производится на месте. Быстро, удобно и легко. Экономит время и силы</h2>
-            </div>
-
-           
-        </div>
-
-    </div>
-
-
-
-
-
-
-    <!-- <div style="height: 1000px;"></div> -->
-
-    
-
-    <footer>
-        <div class="footerFirstFloor">
-            <img src="./img/logoFood.png" class="logo" style="margin: 0;">
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (747) 649-21-97</h3>
-                <span class="footerDescriptionSpan">Mukan Zhanbolat</span>
-            </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (747) 108-91-55</h3>
-                <span class="footerDescriptionSpan">Sultanov Yerkanat</span>
-            </div>
-           
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (777) 567-67-14</h3>
-                <span class="footerDescriptionSpan">Medresova Nuraina</span>
-            </div>
-            <button class="footerButton">Поддержать создателей</button>
-        </div>
-        <div class="footerSecondFloor">
-            <div class="navLinks" style="margin-left: 50px;">Главная</div>
-            <div class="navLinks">Доставка еды</div>
-            <div class="navLinks">О нас</div>
-            <div class="navLinks">Кейтеринг</div>
-            <div class="navLinks">Новости</div>
-            <div class="navLinks" style="margin-right: 50px;">Контакты</div>
-        </div>
-        <div class="footerThirdFloor">
-            <div>
-                <div class="footerBottomText">© 2022 - "Food Court Sdu"</div>
-                <div class="footerBottomText">Сеть столовых.</div>
-            </div>
-            <div>
-                <img src="./icons/icons8-instagram-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-facebook-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-twitter-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-youtube-24.png" style="margin-right: 20px;">
-            </div>
+<div class="auth">
+    <div id="1" class="registrationBlock">
+        <div class="thefront">
             <div style="display: flex;">
-                <div>
-                    <div class="footerBottomText">По поводу багов</div>
-                    <div class="footerBottomText" style=" text-align: right;">сообщите</div>
+                <p style="margin-right: 15px;">Please, register</p>
+            </div>
+            <form class="form-signin" action="" method="post" name="form" onsubmit="reg(event)">
+                <div style="display: flex; width: 97.5%;">
+                    <div>
+                        <label>Name</label>
+                        <input class="form-styling" type="text" name="username" placeholder=""/>
+                    </div>
+                    <div>
+                        <label>Surname</label>
+                        <input class="form-styling" type="text" name="username" placeholder=""/>
+                    </div>
+
                 </div>
-                <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">
+
+                <label>Username</label>
+                <input class="form-styling" type="text" name="username" placeholder=""/>
+                <label >Password</label>
+                <input class="form-styling" type="text" name="password" placeholder=""/>
+                <div class="btn-animate">
+                    <button type="submit" class="btn-signin">Sign in</button>
+                </div>
+            </form>
+            <div style="width: 100%; display: flex; justify-content: center; flex-direction: column; cursor: pointer;" onclick="makeClickable()">
+                <div style="width: 90%; height: 1px; background-color: gray ; align-self: center; margin-top: 25px;"></div>
+                <div style="display: flex; justify-content: center;">
+                    <div style="align-self: center; margin-top: 15px;">already registered? <a href="#" style="text-decoration:underline;" onclick = 'flip()'>log in</a></div>
+                </div>
             </div>
         </div>
-    </footer> 
 
-    <script src="./js.js" defer></script>
+        <div class="theback">
+            <div style="display: flex;">
+                <p style="margin-right: 15px;">Please, Log in</p>
+            </div>
+            <form class="form-signin" action="" method="post" name="form">
+
+
+                <label >Username</label>
+                <input class="form-styling" type="text" name="username" placeholder=""/>
+                <label >Password</label>
+                <input class="form-styling" type="text" name="password" placeholder=""/>
+            </form>
+            <div style="width: 100%; display: flex; justify-content: center; flex-direction: column;">
+                <div class="btn-animate">
+                    <a class="btn-signin">Log in</a>
+                </div>
+                <div style="width: 90%; height: 1px; background-color: gray ; align-self: center; margin-top: 25px;"></div>
+                <div style="display: flex; justify-content: center;">
+                    <div style="align-self: center; margin-top: 15px;">Have not logged in? <a href="#" style="text-decoration:underline;" onclick='flipagain()'>register</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav>
+    <div class="uppernav">
+        <a href="./welcomePage.html" id="welcomePage">
+            <img src="./img/logoFood.png" class="logo">
+        </a>
+        <div class="firstnavright">
+            <a href="./cart.html" class="upperNavNoneW disableClick" id="cartPage">
+                <img src="./img/cart.png" width="30px" height="30px">
+            </a>
+            <a class="upperNavNoneW disableClick" id = "aboutPage" href="./aboutUs.html">
+                <p class="navp"  >about us</p>
+            </a>
+            <div class="registrationButton " style="margin-right: 10px;" onclick='showRefister()'>registration</div>
+            <img class = "upperNavNoneW" src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <!-- <div style="width: 85%; height: 2px; background-color: gray;"></div> -->
+
+</nav>
+<div class="topnav" id="myTopnav">
+    <div style="width: 85%;" class="openingNavbar">
+        <div class="" id="noneBlock" style="display: none;">
+            <!-- <div class="registrationButton" style="margin-left: 45px; margin-top: 20px;">registration</div> -->
+
+
+            <a href="./cart.html" class="disableClick" id="cartPage2">
+                <div style="display: flex; align-items: center; padding-bottom: 0px;">
+                    <img src="./img/cart.png" style="margin-left: 30px; margin-right: 10px;" width="30px" height="30px">
+                    <p>cart</p>
+                </div>
+            </a>
+
+
+            <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 45px; margin-top: 0px;">
+
+            <a href="./aboutUs.html" class="disableClick" id="aboutPage2" >
+                <p class="navp"  style="margin: 0px; margin-left:30px">About us</p>
+            </a>
+
+
+        </div>
+        <a href="./redCanteen.html" class="nava disableClick" id="redCanteen">Red canteen</a>
+        <a href="./acCatering.html" class="nava disableClick" id="acCatering">Ac Catering</a>
+        <a href="./donerHouse.html" class="nava disableClick" id="donerHouse">Doner House</a>
+        <a href="./redCoffee.html" class="nava disableClick" id="redCoffee">Red Coffee</a>
+
+    </div>
+
+</div>
+
+
+<div class="carousel">
+    <button class="carousel-button next" onclick="onNext()">&#187;</button>
+    <button class="carousel-button prev" onclick="onPrev()">&#171;</button>
+    <ul class="slides">
+        <li class="slide" data-active>
+            <img src="./img/IMG_3077%20(2).png" alt="lake image">
+        </li>
+        <li class="slide">
+            <img id="11" style="object-position: top;" src="./img/IMG_3090%20(2).png" alt="mountains image.">
+        </li>
+        <li class="slide" >
+            <img src="./img/972510.png" alt="forest image">
+        </li>
+    </ul>
+</div>
+
+
+<div class="buycoursediv" style = "background-position-x: 900px; background-position-y: -200px; background-size: 900px;" id="cases">
+    <div style="display: flex; flex-direction: column; justify-content: center; ">
+        <!-- <div>
+            <div class="bigboldtext">
+                &nbsp;We guarantee you
+            </div>
+        </div> -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center;">
+
+            <div class="manblock" >
+                <div style="display: flex; align-items: center;">
+                    <img src="./img/galochka.png" class = "galochka">
+                    <div>
+                        <div class="name">An unforgettable trip</div>
+                        <div class="graytext">professional filming</div>
+                    </div>
+                </div>
+                <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">On our tours, you will have unforgettable fun and get to know the sights of your native country. </div>
+                <div class="name" style="font-size: 20px; ">sign up for a tour</div>
+            </div>
+
+            <div class="manblock" >
+                <div style="display: flex; align-items: center;">
+                    <img src="./img/galochka.png" class = "galochka">
+                    <div>
+                        <div class="name">New sensations</div>
+                        <div class="graytext">lakes, rivers, mountains</div>
+                    </div>
+                </div>
+                <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">you will be amazed by new discoveries that you did not expect from Kazakhstan</div>
+                <div class="name" style="font-size: 20px;">sign up for a tour</div>
+            </div>
+
+            <div class="manblock" >
+                <div style="display: flex; align-items: center;">
+                    <img src="./img/galochka.png" class = "galochka">
+                    <div>
+                        <div class="name">Icredible landscapes</div>
+                        <div class="graytext">deserts, steppes, mountains</div>
+                    </div>
+                </div>
+                <div class="justtext" style="color: rgb(23, 22, 22); margin-top: 10px;">You will see stunning landscapes ranging from deserts and steppes to mountains and lakes</div>
+                <div class="name" style="font-size: 20px;">sign up for a tour</div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+<div class="stepsOfStudying">
+    <div class="boldtext">Производите оплату с Kaspi Pay</div>
+    <div class="steps">
+        <div class="step">
+            <div class="kaspipays"></div>
+            <div class="stepBoldText">Оплачивайте <br> с терминала</div>
+            <h2 class=" ">Платеж производится на месте. Быстро, удобно и легко. Экономит время и силы</h2>
+        </div>
+
+        <div class="step">
+            <div class="kaspipays"></div>
+            <div class="stepBoldText">Оплачивайте <br> с QR телефона</div>
+            <h2 class="stepGrayText">Платеж производится на месте. Быстро, удобно и легко. Экономит время и силы</h2>
+        </div>
+
+        <div class="step">
+            <div class="kaspipays"></div>
+            <div class="stepBoldText">Оплачивайте <br> c помощью QR доски</div>
+            <h2 class="stepGrayText">Платеж производится на месте. Быстро, удобно и легко. Экономит время и силы</h2>
+        </div>
+
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="footerFirstFloor">
+        <img src="./img/logoFood.png" class="logo" style="margin: 0;">
+        <div class="phoneNumberBlock">
+            <h3 class="footerPhoneNumberh3">+7 (747) 649-21-97</h3>
+            <span class="footerDescriptionSpan">Mukan Zhanbolat</span>
+        </div>
+        <div class="phoneNumberBlock">
+            <h3 class="footerPhoneNumberh3">+7 (747) 108-91-55</h3>
+            <span class="footerDescriptionSpan">Sultanov Yerkanat</span>
+        </div>
+
+        <div class="phoneNumberBlock">
+            <h3 class="footerPhoneNumberh3">+7 (777) 567-67-14</h3>
+            <span class="footerDescriptionSpan">Medresova Nuraina</span>
+        </div>
+        <button class="footerButton">Поддержать создателей</button>
+    </div>
+    <div class="footerSecondFloor">
+        <div class="navLinks" style="margin-left: 50px;">Главная</div>
+        <div class="navLinks">Доставка еды</div>
+        <div class="navLinks">О нас</div>
+        <div class="navLinks">Кейтеринг</div>
+        <div class="navLinks">Новости</div>
+        <div class="navLinks" style="margin-right: 50px;">Контакты</div>
+    </div>
+    <div class="footerThirdFloor">
+        <div>
+            <div class="footerBottomText">© 2022 - "Food Court Sdu"</div>
+            <div class="footerBottomText">Сеть столовых.</div>
+        </div>
+        <div>
+            <img src="./icons/icons8-instagram-24.png" style="margin-right: 20px;">
+            <img src="./icons/icons8-facebook-24.png" style="margin-right: 20px;">
+            <img src="./icons/icons8-twitter-24.png" style="margin-right: 20px;">
+            <img src="./icons/icons8-youtube-24.png" style="margin-right: 20px;">
+        </div>
+        <div style="display: flex;">
+            <div>
+                <div class="footerBottomText">По поводу багов</div>
+                <div class="footerBottomText" style=" text-align: right;">сообщите</div>
+            </div>
+            <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">
+        </div>
+    </div>
+</footer>
+
+<script>
+    function reg(event){
+        event.preventDefault();
+
+        let form = event.target;
+        let formdata = new FormData (form);
+
+        fetch('http://localhost:8080/registration.php',{
+            method:'post',
+            body:formdata
+        }).then(res =>{
+            return res.text()
+        }).then(aa =>{
+            alert(aa)
+        })
+    }
+</script>
 </body>     
