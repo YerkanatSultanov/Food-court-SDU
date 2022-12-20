@@ -35,9 +35,9 @@
                     <label for="password">Password</label>
                     <input class="form-styling" type="text" name="password" placeholder=""/>
                 </form>
-                <div style="width: 100%; display: flex; justify-content: center; flex-direction: column;">
+                <div style="width: 100%; display: flex; justify-content: center; flex-direction: column; cursor: pointer;" onclick="makeClickable()">
                     <div class="btn-animate">
-                        <a class="btn-signin">Sign in</a>
+                        <a class="btn-signin" >Sign in</a>
                     </div>
                     <div style="width: 90%; height: 1px; background-color: gray ; align-self: center; margin-top: 25px;"></div>
                     <div style="display: flex; justify-content: center;">
@@ -48,7 +48,7 @@
 
             <div class="theback">
                 <div style="display: flex;">
-                    <p style="margin-right: 15px;">Please, register</p>
+                    <p style="margin-right: 15px;">Please, Log in</p>
                 </div>
                 <form class="form-signin" action="" method="post" name="form">
                    
@@ -60,11 +60,11 @@
                 </form>
                 <div style="width: 100%; display: flex; justify-content: center; flex-direction: column;">
                     <div class="btn-animate">
-                        <a class="btn-signin">Sign in</a>
+                        <a class="btn-signin">Log in</a>
                     </div>
                     <div style="width: 90%; height: 1px; background-color: gray ; align-self: center; margin-top: 25px;"></div>
                     <div style="display: flex; justify-content: center;">
-                        <div style="align-self: center; margin-top: 15px;">already registered? <a href="#" style="text-decoration:underline;">log in</a></div>
+                        <div style="align-self: center; margin-top: 15px;">Have not logged in? <a href="#" style="text-decoration:underline;" onclick='flipagain()'>register</a></div>
                     </div>
                 </div>
             </div>
@@ -129,10 +129,10 @@
         <button class="carousel-button prev" onclick="onPrev()">&#171;</button>
         <ul class="slides">
             <li class="slide" data-active> 
-                <img src="./img/4483.jpeg" alt="lake image">
+                <img src="./img/IMG_3077%20(2).png" alt="lake image">
             </li>
             <li class="slide">
-                <img src="./img/grass.jpg" alt="mountains image">
+                <img id="11" style="object-position: top;" src="./img/IMG_3090%20(2).png" alt="mountains image.">
             </li>
             <li class="slide" >
                 <img src="./img/972510.png" alt="forest image">
