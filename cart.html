@@ -58,42 +58,42 @@
         </div>
         
     </div>
+</nav>
+  
+
+<div class="mainBlock">
+    <div style="display: flex;">
+        <div class="div1 all">
+            <h2>Food Name</h2>
+            <br>
+            
+            <div class="distance">Почо соленое вареное с картошкой</div>
+            <div class="distance">Почо соленое вареное с картошкой</div>
+            <div class="distance">Почо соленое вареное с картошкой</div>
+            <div class="distance">Почо соленое вареное с картошкой</div>
+        </div>
+        <!-- <div class="middleDiv all">
+            <h2>amount</h2>
+        </div> -->
+        <div class="div2 all">
+            <h2>price</h2>
+            <br>
+            
+            <div class="distance">500 tg</div>
+            <div class="distance">500 tg</div>
+            <div class="distance">500 tg</div>
+            <div class="distance">500 tg</div>
+        </div>
+    </div>
+    <br>
+    <div style="height: 2px; background-color: gray; width: 100%;"></div>
+    <div class="total">
+        <div>TOTAL SUM:</div>
+        <div>500tg</div>
+    </div>
     
 
-    <div class="mainBlock">
-        <div style="display: flex;">
-            <div class="div1 all">
-                <h2>Food Name</h2>
-                <br>
-                
-                <div class="distance">Почо соленое вареное с картошкой</div>
-                <div class="distance">Почо соленое вареное с картошкой</div>
-                <div class="distance">Почо соленое вареное с картошкой</div>
-                <div class="distance">Почо соленое вареное с картошкой</div>
-            </div>
-            <!-- <div class="middleDiv all">
-                <h2>amount</h2>
-            </div> -->
-            <div class="div2 all">
-                <h2>price</h2>
-                <br>
-                
-                <div class="distance">500 tg</div>
-                <div class="distance">500 tg</div>
-                <div class="distance">500 tg</div>
-                <div class="distance">500 tg</div>
-            </div>
-        </div>
-        <br>
-        <div style="height: 2px; background-color: gray; width: 100%;"></div>
-        <div class="total">
-            <div>TOTAL SUM:</div>
-            <div>500tg</div>
-        </div>
-        
-
-    </div>
-
+</div>
 
 
 
@@ -147,8 +147,19 @@
                 <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">
             </div>
         </div>
-    </footer>
-    <script src="./js.js" defer></script>
-
+    </div>
+</footer>
+<script type="text/javascript">
+    let mass=[];
+    $.ajax({
+        url:'getData.php',
+        type:'POST',
+        dataType: 'json',
+        data: mass,
+        success: function(data){
+            alert(data);
+        }
+    });
+</script>
 </body>
 </html>
