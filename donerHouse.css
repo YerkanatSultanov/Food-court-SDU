@@ -247,6 +247,13 @@ h3{
 
     font-size: 12px;
 }
+footer{
+    background-color: #333637;
+    color: white;
+}
+.footerBottomText{
+    color: white;
+}
 @media screen and (max-width: 768px) {
     .part{
         padding: 10px;
@@ -262,12 +269,12 @@ h3{
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 425px){
     .select{
         display: flex;
         flex-direction: column;
         margin-bottom: 3px;
-        max-width: 40%;
+        max-width: 60%;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
@@ -286,7 +293,7 @@ h3{
         width: 100px;
         height: 100px;
         margin-top: 30px;
-        margin-left: 110px;
+        margin-left: 160px;
 
     }
     .product_name{
@@ -313,6 +320,12 @@ h3{
         margin-left: auto;
         width: 150px;
     }
+    footer{
+        background-color: #333637;
+        width: 100%;
+        bottom: 0;
+    }
+
 }
 
 

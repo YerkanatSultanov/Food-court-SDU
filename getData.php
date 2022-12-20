@@ -8,22 +8,16 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$query = "SELECT * FROM `busket`;";
 
+$data = array();
+$select_sql = ('SELECT * FROM `busket`');
 
-$result = $conn->query($query);
+$result = mysqli_query($conn,$select_sql);
 
-if ($result->num_rows > 0)
-{
-    // OUTPUT DATA OF EACH ROW
-    while($row = $result->fetch_assoc())
-    {
-        echo $row;
-    }
+while($row = mysqli_fetch_row($result)) {
+    $data[] = $row;
 }
-else {
-    echo "0 results";
-}
-
+$json = json_encode($data);
+echo $json;
 $conn->close();
 ?>

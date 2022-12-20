@@ -271,7 +271,7 @@ body{
 
 
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 425px){
     .imgg{
         max-height: 150px;
     }
