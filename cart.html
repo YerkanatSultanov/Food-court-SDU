@@ -62,9 +62,182 @@
 </div>
 
 
-<div class="z" >
+<div class="z" style="display: none">
     <div id="0"></div>
 </div>
+<div class="pp">
+    <div class="part" id="part1">
+
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text1"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price1"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part2">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text2"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price2"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part3">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text3"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price3"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part4">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text4"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price4"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part5">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text5"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price5"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part6">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text6"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price6"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part7">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text7"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price7"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part8">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text8"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price8"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part9">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text9"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price9"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part10">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text10"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price10"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part11">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text11"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price11"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part12">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text12"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price12"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part13">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text13"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price13"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="part" id="part14">
+        <div class="product_content">
+            <div class="product_content_inner">
+                <div class="product_name" id="text14"></div>
+                <div style="display: flex">
+                    <div class="price_box" id="price14"></div>
+                    <div><p>tg</p></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="price_box" id="total"></div>
+</div>
+
 <!--<div class="mainBlock">-->
 
 <!--    <div style="display: flex;">-->
@@ -152,6 +325,9 @@
 <script type="text/javascript">
     let mass=[];
     let a;
+    let longtext = '';
+    let arraySplitted;
+    let total = 0;
     $.ajax({
         url:'getData.php',
         type:'POST',
@@ -159,9 +335,25 @@
         data: mass,
         success: function(data){
             a = data;
+
             document.getElementById('0').innerHTML = a;
+            for(let i =0; i<a.length; i++){
+                longtext += a[i].toString() + ',';
+            }
+            arraySplitted = longtext.split(',');
+            console.log(arraySplitted)
+            let j = 1;
+            for (let i = 1; i < arraySplitted.length; i+= 2) {
+                document.getElementById('part' + j).style.display = "flex";
+                document.getElementById('text'+j).innerHTML = arraySplitted[i-1];
+
+                document.getElementById('price' + j).innerHTML = arraySplitted[i];
+                j++;
+            }
+
         }
     });
+
 </script>
 </body>
 </html>

@@ -45,7 +45,56 @@ body{
     background-color: blue;
     /* height: 300px; */
 }
+.pp{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product_content{
+    display: flex;
+    align-items: center;
+}
+.part{
+    display: none;
+    border: 2px solid orange;
+    border-radius: 50px;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    width: 170px;
+    margin: 20px;
+}
+.manufacture_product{
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+}
 
+.product_name{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.price_box{
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 480;
+    color: black;
+}
+.partInPart{
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
 .distance{
     margin: 15px;
 }
