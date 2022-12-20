@@ -49,7 +49,7 @@ function myFunction() {
 }
 // end for welcomePage
 function showRegister(){
-    console.log('started')
+    console.log('started Show Register')
     document.getElementsByClassName('auth')[0].style.display="unset";
     document.body.style.overflowY="hidden";
     document.getElementById('cartPage').classList.add('disableClick');
