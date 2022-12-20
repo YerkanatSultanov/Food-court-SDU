@@ -4,9 +4,9 @@ body{
     padding: 0;
     /*color: white;*/
     background-color: #151819;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;
 
 }
 .mainContent{
@@ -247,14 +247,13 @@ h3{
 
     font-size: 12px;
 }
-footer{
-    background-color: #333637;
-    color: white;
-}
-.footerBottomText{
-    color: white;
-}
 @media screen and (max-width: 768px) {
+    .main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
     .part{
         padding: 10px;
         margin: 8px;
@@ -269,12 +268,15 @@ footer{
 
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 380px){
+    .main{
+        margin-top: 0;
+    }
     .select{
         display: flex;
         flex-direction: column;
         margin-bottom: 3px;
-        max-width: 60%;
+        max-width: 40%;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
@@ -293,12 +295,18 @@ footer{
         width: 100px;
         height: 100px;
         margin-top: 30px;
-        margin-left: 160px;
+        margin-left: 142px;
 
     }
     .product_name{
         font-size: 20px;
         line-height: 18px;
+    }
+    .about{
+        max-width: 250px;
+    }
+    .title{
+        font-size: 16px;
     }
     .price_box{
         font-size: 23px;
@@ -321,11 +329,10 @@ footer{
         width: 150px;
     }
     footer{
-        background-color: #333637;
         width: 100%;
         bottom: 0;
-    }
 
+    }
 }
 
 
