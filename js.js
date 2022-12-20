@@ -48,9 +48,9 @@ function myFunction() {
     }
 }
 // end for welcomePage
-function showRefister(){
+function showRegister(){
     console.log('started')
-    document.getElementsByClassName('auth')[0].style.display="flex";
+    document.getElementsByClassName('auth')[0].style.display="unset";
     document.body.style.overflowY="hidden";
     document.getElementById('cartPage').classList.add('disableClick');
     document.getElementById('aboutPage').classList.add('disableClick');

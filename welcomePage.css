@@ -18,6 +18,12 @@ body,html{
     position: relative;
   
 } */
+/* body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 .auth{
     margin-top: 50px;
     z-index: 200;
@@ -42,6 +48,8 @@ body,html{
 }
 .btn-signin{
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 /* .thecard{
@@ -55,7 +63,9 @@ body,html{
 .registrationBlock{
     
     background-color: #04AA6D;
-    /* position: absolute; */
+    position: absolute;
+    top: 10%;
+    left: 35%;
     padding: 45px;
     padding-top: 20px;
     display: flex;
