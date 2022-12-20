@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+.mainBlock{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* height: 400px; */
+    background-color: aquamarine;
+}
+
+.div1{
+    width: 625px;
+    /* height: 300px; */
+    background-color: aqua;
+
+}
+.all{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.middleDiv{
+    width: 100px;
+    background-color: blueviolet;
+    height: 400px;
+}
+.div2{
+    width: 600px;
+    background-color: blue;
+    /* height: 300px; */
+}
+
+.distance{
+    margin: 15px;
+}
+
+.total{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
