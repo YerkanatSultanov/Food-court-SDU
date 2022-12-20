@@ -242,7 +242,9 @@ h3{
     margin-top: 15px;
     text-transform: uppercase;
 }
-
+.topnav{
+    display: block;
+}
 .descr{
 
     font-size: 12px;

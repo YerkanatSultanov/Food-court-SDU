@@ -1,163 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Food-court-sdu</title>
-        <link rel="stylesheet" href="./cart.css">
-        <link rel="stylesheet" href="./common.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="./img/logoFood.png">
-    </head>
-<body style="padding-top:50px; display: flex; flex-direction: column; align-items: center;">
-    <nav>
-        <div class="uppernav">
-            <a href="./welcomePage.html">
-                <img src="./img/logoFood.png" class="logo">
-            </a>
-            <div class="firstnavright">
-                <a href="./cart.html" class="upperNavNoneW">
-                    <img src="./img/cart.png" width="30px" height="30px">
-                </a>
-                <a class="upperNavNoneW" href="./aboutUs.html">
-                    <p class="navp">about us</p>
-                </a>
-                <div class="registrationButton" style="margin-right: 10px;">registration</div>
-                <img class = "upperNavNoneW" src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
-        <!-- <div style="width: 85%; height: 2px; background-color: gray;"></div> -->
-       
-    </nav>
-    <div class="topnav" id="myTopnav">
-        <div style="width: 85%;" class="openingNavbar">
-            <div class="" id="noneBlock" style="display: none;">
-                <!-- <div class="registrationButton" style="margin-left: 45px; margin-top: 20px;">registration</div> -->
-    
-                <a href="./cart.html">
-                    <div style="display: flex; align-items: center; padding-bottom: 0px;">
-                        <img src="./img/cart.png" style="margin-left: 30px; margin-right: 10px;" width="30px" height="30px">
-                        <p>cart</p>
-                    </div>
-                </a>
-                
-                <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 45px; margin-top: 0px;">
-                <a href="./aboutUs.html">
-                    <p class="navp" style="margin: 0px; margin-left:30px">About us</p>
-                </a>
-            </div>
-            <a href="./redCanteen.html"  class="nava">Red canteen</a>
-            <a href="./acCatering.html" class="nava">Ac Catering</a>
-            <a href="./donerHouse.html" class="nava">Doner House</a>
-            <a href="./redCoffee.html" class="nava">Red Coffee</a>
-            
-        </div>
-        
-    </div>
-</nav>
-  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-court-sdu</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<div class="mainBlock">
-    <div style="display: flex;">
-        <div class="div1 all">
-            <h2>Food Name</h2>
-            <br>
-            
-            <div class="distance">Почо соленое вареное с картошкой</div>
-            <div class="distance">Почо соленое вареное с картошкой</div>
-            <div class="distance">Почо соленое вареное с картошкой</div>
-            <div class="distance">Почо соленое вареное с картошкой</div>
-        </div>
-        <!-- <div class="middleDiv all">
-            <h2>amount</h2>
-        </div> -->
-        <div class="div2 all">
-            <h2>price</h2>
-            <br>
-            
-            <div class="distance">500 tg</div>
-            <div class="distance">500 tg</div>
-            <div class="distance">500 tg</div>
-            <div class="distance">500 tg</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/logoFood.png">
+</head>
+<body style="padding-top:50px; display: flex; flex-direction: column; align-items: center;">
+<nav>
+    <div class="uppernav">
+        <a href="./welcomePage.html">
+            <img src="./img/logoFood.png" class="logo">
+        </a>
+        <div class="firstnavright">
+            <a href="./cart.html" class="upperNavNoneW">
+                <img src="./img/cart.png" width="30px" height="30px">
+            </a>
+            <a class="upperNavNoneW" href="./aboutUs.html">
+                <p class="navp">about us</p>
+            </a>
+            <div class="registrationButton" style="margin-right: 10px;">registration</div>
+            <img class = "upperNavNoneW" src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 30px;">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
-    <br>
-    <div style="height: 2px; background-color: gray; width: 100%;"></div>
-    <div class="total">
-        <div>TOTAL SUM:</div>
-        <div>500tg</div>
+    <!-- <div style="width: 85%; height: 2px; background-color: gray;"></div> -->
+
+</nav>
+<div class="topnav" id="myTopnav">
+    <div style="width: 85%;" class="openingNavbar">
+        <div class="" id="noneBlock" style="display: none;">
+            <!-- <div class="registrationButton" style="margin-left: 45px; margin-top: 20px;">registration</div> -->
+
+            <a href="./cart.html">
+                <div style="display: flex; align-items: center; padding-bottom: 0px;">
+                    <img src="./img/cart.png" style="margin-left: 30px; margin-right: 10px;" width="30px" height="30px">
+                    <p>cart</p>
+                </div>
+            </a>
+
+            <img src="./icons/user.png" width="40px" height="40px"  alt="profilepic" style="margin-right: 25px;margin-left: 45px; margin-top: 0px;">
+            <a href="./aboutUs.html">
+                <p class="navp" style="margin: 0px; margin-left:30px">About us</p>
+            </a>
+        </div>
+        <a href="./redCanteen.html"  class="nava">Red canteen</a>
+        <a href="./acCatering.html" class="nava">Ac Catering</a>
+        <a href="./donerHouse.html" class="nava">Doner House</a>
+        <a href="./redCoffee.html" class="nava">Red Coffee</a>
+
     </div>
-    
 
 </div>
 
 
+<div class="z" >
+    <div id="0"></div>
+</div>
+<!--<div class="mainBlock">-->
+
+<!--    <div style="display: flex;">-->
+<!--        <div class="div1 all">-->
+<!--            <h2>Food Name</h2>-->
+<!--            <br>-->
+<!--            -->
+<!--            -->
+
+<!--        </div>-->
+<!--        &lt;!&ndash; <div class="middleDiv all">-->
+<!--            <h2>amount</h2>-->
+<!--        </div> &ndash;&gt;-->
+<!--        <div class="div2 all">-->
+<!--            <h2>price</h2>-->
+<!--            <br>-->
+<!--            -->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--    <br>-->
+<!--    <div style="height: 2px; background-color: gray; width: 100%;"></div>-->
+<!--    <div class="total">-->
+<!--        <div>TOTAL SUM:</div>-->
+<!--        <div>500tg</div>-->
+<!--    </div>-->
+<!--    -->
+
+<!--</div>-->
 
 
 
-    <footer>
-        <div class="footerFirstFloor">
-            <img src="./img/logoFood.png" class="logo" style="margin: 0;">
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <div class="phoneNumberBlock">
-                <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
-                <span class="footerDescriptionSpan">Доставка в Алматы</span>
-            </div>
-            <button class="footerButton">Заказать доставку</button>
+
+
+<footer>
+    <div class="footerFirstFloor">
+        <img src="./img/logoFood.png" class="logo" style="margin: 0;">
+        <div class="phoneNumberBlock">
+            <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
+            <span class="footerDescriptionSpan">Доставка в Алматы</span>
         </div>
-        <div class="footerSecondFloor">
-            <div class="navLinks" style="margin-left: 50px;">Главная</div>
-            <div class="navLinks">Доставка еды</div>
-            <div class="navLinks">О нас</div>
-            <div class="navLinks">Кейтеринг</div>
-            <div class="navLinks">Новости</div>
-            <div class="navLinks" style="margin-right: 50px;">Контакты</div>
+        <div class="phoneNumberBlock">
+            <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
+            <span class="footerDescriptionSpan">Доставка в Алматы</span>
         </div>
-        <div class="footerThirdFloor">
+        <div class="phoneNumberBlock">
+            <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
+            <span class="footerDescriptionSpan">Доставка в Алматы</span>
+        </div>
+        <div class="phoneNumberBlock">
+            <h3 class="footerPhoneNumberh3">+7 (708) 970-50-46</h3>
+            <span class="footerDescriptionSpan">Доставка в Алматы</span>
+        </div>
+        <button class="footerButton">Заказать доставку</button>
+    </div>
+    <div class="footerSecondFloor">
+        <div class="navLinks" style="margin-left: 50px;">Главная</div>
+        <div class="navLinks">Доставка еды</div>
+        <div class="navLinks">О нас</div>
+        <div class="navLinks">Кейтеринг</div>
+        <div class="navLinks">Новости</div>
+        <div class="navLinks" style="margin-right: 50px;">Контакты</div>
+    </div>
+    <div class="footerThirdFloor">
+        <div>
+            <div class="footerBottomText">© 2022 - "Qaganat24"</div>
+            <div class="footerBottomText">Сеть столовых.</div>
+        </div>
+        <div>
+            <img src="./icons/icons8-instagram-24.png" style="margin-right: 20px;">
+            <img src="./icons/icons8-facebook-24.png" style="margin-right: 20px;">
+            <img src="./icons/icons8-twitter-24.png" style="margin-right: 20px;">
+            <img src="./icons/icons8-youtube-24.png" style="margin-right: 20px;">
+        </div>
+        <div style="display: flex;">
             <div>
-                <div class="footerBottomText">© 2022 - "Qaganat24"</div>
-                <div class="footerBottomText">Сеть столовых.</div>
+                <div class="footerBottomText">Разработка сайтов</div>
+                <div class="footerBottomText" style=" text-align: right;">Веб студия</div>
             </div>
-            <div>
-                <img src="./icons/icons8-instagram-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-facebook-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-twitter-24.png" style="margin-right: 20px;">
-                <img src="./icons/icons8-youtube-24.png" style="margin-right: 20px;">
-            </div>
-            <div style="display: flex;">
-                <div>
-                    <div class="footerBottomText">Разработка сайтов</div>
-                    <div class="footerBottomText" style=" text-align: right;">Веб студия</div>
-                </div>
-                <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">
-            </div>
+            <img src="./icons/user.png" width="50px" height="50px" style="margin-right: 10px;">
         </div>
+    </div>
     </div>
 </footer>
 <script type="text/javascript">
     let mass=[];
+    let a;
     $.ajax({
         url:'getData.php',
         type:'POST',
         dataType: 'json',
         data: mass,
         success: function(data){
-            alert(data);
+            a = data;
+            document.getElementById('0').innerHTML = a;
         }
     });
 </script>

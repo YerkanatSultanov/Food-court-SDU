@@ -6,7 +6,15 @@ body{
 
 }
 
-
+.z{
+    width: 100%;
+    height: 600px;
+    background-color: #04AA6D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
 .mainBlock{
     margin-top: 50px;
     display: flex;
@@ -23,7 +31,7 @@ body{
 
 }
 .all{
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
