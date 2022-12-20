@@ -50,18 +50,17 @@
             <div style="display: flex;">
                 <p style="margin-right: 15px;">Please, Log in</p>
             </div>
-            <form class="form-signin" action="" method="post" name="form">
-
-
+            <form class="form-signin" action="" method="post" name="form" onsubmit="login(event)">
                 <label >Username</label>
                 <input class="form-styling" type="text" name="username" placeholder=""/>
                 <label >Password</label>
                 <input class="form-styling" type="text" name="password" placeholder=""/>
+                <div class="btn-animate">
+                    <button type="submit" class="btn-signin">Log in</button>
+                </div>
             </form>
             <div style="width: 100%; display: flex; justify-content: center; flex-direction: column;">
-                <div class="btn-animate">
-                    <a class="btn-signin">Log in</a>
-                </div>
+
                 <div style="width: 90%; height: 1px; background-color: gray ; align-self: center; margin-top: 25px;"></div>
                 <div style="display: flex; justify-content: center;">
                     <div style="align-self: center; margin-top: 15px;">Have not logged in? <a href="#" style="text-decoration:underline;" onclick='flipagain()'>register</a></div>
@@ -284,6 +283,23 @@
         }).then(aa =>{
             alert(aa)
         })
+    }
+    function login(event){
+        event.preventDefault();
+
+        let form = event.target;
+        let formdata = new FormData (form);
+
+        fetch('http://localhost:8080/login.php',{
+            method:'post',
+            body:formdata
+        })
+            .then(result=>{
+                return result.text()
+            })
+            .then(final_result=>{
+                console.log(final_result);
+            })
     }
 </script>
 </body>     

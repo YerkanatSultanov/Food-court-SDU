@@ -11,8 +11,8 @@ if ($conn->connect_error) {
 }
 
 
-$email = $_POST['em'];
-$password = $_POST['ps'];
+$email = $_POST['username'];
+$password = $_POST['password'];
 
 $sql = "select * from login_page where email like '$email' and password like '$password'";
 
